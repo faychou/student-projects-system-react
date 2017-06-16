@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " ng-repeat="allproject in articless |filter:search">
+			<h2 class="title">{{allproject.title}}</h2>
+			<!--<div class="bgimg"></div>-->
+			<a style="font-size:14px" href="{{allproject.href}}"><img class="myimg" src="{{allproject.exImg}}" alt="" width="100%"></a>
+			<p class="words">{{allproject.content}}</p>
+			<p class="word"><a href="{{allproject.resume}}">{{allproject.author}}</a></p>
+		</div>		
+	</div>
+</div>
+<!--优秀作品展示-->

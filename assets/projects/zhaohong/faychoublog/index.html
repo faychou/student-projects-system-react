@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>飞舟博客-关注Web前端发展，分享办公软件使用心得</title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">				
+		<link rel="stylesheet" href="css/index.css">		
+		<link rel="stylesheet" href="css/article.css">
+			
+	</head>
+	<body onmousewheel="backTop()" DOMMouseScroll="backTop()">
+		<!--页面顶部样式-->
+		<div class="blog-title">
+			<div class="title-content">
+				<span class="title-one">飞舟博客</span>
+				<span class="title-info"> – 关注Web前端发展，分享办公软件使用心得。</span>
+			</div>
+		</div>
+		<!--页面pc端的导航样式-->
+			<div class="nav">
+					<ul class="nav-ul">
+						<li class="nav-first nav-li" style="background-color: rgb(21,162,135);"><a>首页</a></li>
+						<li class="nav-li"><a>咨询</a>
+						</li>
+						<li class="nav-li"><a>Web前端</a></li>
+						<li class="nav-li"><a>office</a></li>
+						<li class="nav-li"><a>计算机</a></li>
+						<li class="nav-source nav-li" ><a onclick="gray()">资源</a>
+							<ul id="source">
+								<li><a>网站模板</a></li>
+								<li class=""><a>网页插件</a></li>
+								<li class=""><a>图片图标</a></li>
+								<li class=""><a>软件</a></li>
+								<li class=""><a>其他</a></li>
+							</ul>
+						</li>
+						<li class="nav-others nav-li"><a>其他</a>
+							<ul>
+								<li><a>文章存档</a></li>
+								<li><a>标签云</a></li>
+								<li><a>投稿</a></li>
+								<li><a>留言板</a></li>
+								<li><a>友情链接</a></li>
+							</ul>
+						</li>
+						<li class="glass nav-li fa fa-search" style="font-size: 25px;line-height: 52px;"onclick="search('content-search')"></li>
+						<li style="clear:both" class="nav-li" ></li>
+					</ul>
+			</div>
+			
+			<!--一下内容是当导航菜单消失之后展现的另一种导航菜单的样式-->
+			<img src="img/nav-line.png" class="nav-style" alt="图片加载失败" onclick="shownav()" id="nav-style">
+			<div class="nav-line" id="nav-line">
+				<ul>
+					<li>首页<hr></li>
+					
+					<li>咨询<hr></li>
+					
+					<li>web前端<hr></li>
+					
+					<li>office<hr></li>
+					
+					<li>计算机<hr></li>
+					
+					<li class="first-nav-style">资源
+						<ul>
+							<li>网站模板<hr></li>
+							
+							<li>网页插件<hr></li>
+							
+							<li>图片图标<hr></li>
+							
+							<li>软件<hr></li>
+							
+							<li>其他<hr></li>
+							
+						</ul>
+					<hr></li>
+					
+					<li class="second-nav-style">其他
+						<ul>
+							<li>文章存档<hr></li>
+							
+							<li>标签云<hr></li>
+							
+							<li>投稿<hr></li>
+							
+							<li>留言板<hr></li>
+							
+							<li>友情链接</li>
+							
+						</ul>
+					<hr></li>
+				</ul>
+			</div>
+			<!--上面的快为缩小版的导航样式-->
+			
+			<!--下面块的样式为飞舟博客改版通知的样式-->
+			<div class="notice">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				
+				<span class="notice-text">飞舟博客改版，新增web前端开发知识。</span>
+				
+				<span class="notice-logo"><a>登录</a></span>
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<!--这里是内容搜索框-->
+				<div class="content-search" id="content-search">
+					<i class="fa fa-search small-search" aria-hidden="true"></i>
+					<input type="text" class="search" id="navsearch" onblur="showsearch()">
+				</div>
+			</div>
+			
+			<!--下面部分为图片轮播区域与轮播图片的缩略区域-->
+
+			<div class="content">
+				<div class="four-img">
+					<div class="turn-img">
+						<div class="M-1" id="M-1" onclick="clickImg('M-1')"></div>
+						<div class="M-2" id="M-2" onclick="clickImg('M-2')"></div>
+						<div class="M-3" id="M-3" onclick="clickImg('M-3')"></div>
+						<div class="M-4" id="M-4" onclick="clickImg('M-4')"></div>
+					</div>
+					<div class="img-turn" id="img-turn">
+						
+					</div>
+					<div style="clear:both"></div>
+				</div>
+			<!--下面部分为pc端页面的右部的导航区域-->
+				<div class="content-right">
+
+					<div class="info-1">
+						<span class="fa fa-weibo" title="新浪微博">
+							<div>新浪微博</div>
+						</span>
+						<span class="fa fa-tencent-weibo" title="腾讯微博">
+							<div>腾讯微博</div>
+						</span>
+						<span class="fa fa-weixin">
+							<div class="weixin">
+								<span style="font-size: 10px;">微信扫描我的博客官方公众号码</span>
+								<img src="img/QRCODE.png" width="190px" height="190px" alt="图片加载失败">
+							</div>
+						</span>
+						<span class="fa fa-envelope-o" title="Email">
+							<div>Email</div>
+						</span>
+						<span class="fa fa-qq" title="联系QQ">
+							<div>联系QQ</div>
+						</span>
+						<span class="fa fa-wifi" title="订阅本站">
+							<div>订阅本站</div>
+						</span>
+					</div>
+					<!--邮箱订阅部分-->
+					<div class="email-order">
+						<span class="email-order-span">邮箱订阅</span>
+						<hr>
+						<span class="email-info">填写您的邮件地址，订阅更多的精彩内容：</span>
+						<div class="email-form">
+							<input type="text" placeholder="your@email.com" class="email-input">
+							<input type="button" class="email-button" value="订阅">
+						</div>
+					</div>
+					<!--directory:分类目录部分-->
+					<div class="directory">
+						<span>分类目录</span>
+						<hr>
+						<table>
+							<tr>
+								<td>office</td>
+								<td>web前端</td>
+							</tr>
+							<tr>
+								<td>其他</td>
+								<td>图片图标</td>
+							</tr>
+							<tr>
+								<td>计算机</td>
+								<td>软件</td>
+							</tr>
+						</table>
+						
+					</div>
+					<!--lable cloud:这里是标签云-->
+					<div class="lable-cloud">
+						<span>标签云</span>
+						<hr>
+						<table>
+							<tr>
+								<td>office(25)<div>25个话题</div></td>
+								<td>PPT(20)<div>20个话题</div></td>
+							</tr>
+							<tr>
+								<td>计算机(17)<div>17个话题</div></td>
+								<td>资源搜索(10)<div>10个话题</div></td>
+							</tr>
+							<tr>
+								<td>网络安全(9)<div>9个话题</div></td>
+								<td>excel(6)<div>6个话题</div></td>
+							</tr>
+							<tr>
+								<td>图片资源(6)<div>6个话题</div></td>
+								<td>word(5)<div>5个话题</div></td>
+							</tr>
+							<tr>
+								<td>互联网(4)<div>4个话题</div></td>
+								<td>网络(3)<div>3个话题</div></td>
+							</tr>
+						</table>
+					</div>
+					<!--近期文章部分-->
+					<div class="recently-article">
+						<span>近期文章</span>
+						<hr />
+							<div class="recently-article-span">
+								<span>meta标签全解</span>
+								<hr />
+								<span>PowerPoint里面无法进行中文输入，原因为何？</span>
+								<hr>
+								<span>萌妹子必备：180+超可爱的PNG素材</span>
+								<hr>
+								<span>如何在PPT中设置移动鼠标出现标注文字？</span>
+								<hr>
+								<span>同名文件被替换覆盖后可以恢复吗？</span>
+							</div>
+					</div>
+					<!--时事热门-->
+					<div class="new-hot">
+						<span>时事热门</span>
+						<hr>
+							<span class="create-content">简单四步即可处理好PPT背景音乐和视频的冲突</span>
+							<span class="create-time">2015-11-11</span>
+							<hr>
+							<span class="create-content">如何高速有效的利用搜索引擎寻找需要的资料</span>
+							<span class="create-time">2016-01-03</span>
+							<hr>
+							<span class="create-content">Internet DownloadManager（IDM）下载器</span>
+							<span class="create-time">2015-12-22</span>
+							<hr>
+							<span class="create-content">网页音视频下载方法之——IDM等下载器方法</span>
+							<span class="create-time">2015-12-22</span>
+							<hr>
+							<span class="create-content">网页音视频下载方法之——开发人员工具使用方法</span>
+							<span class="create-time">2015-12-18</span>
+							<hr>
+					</div>
+					<!--这里是活跃读者部分-->
+					<div class="active-reader">
+						<span>活跃读者</span>
+						<hr>
+					</div>
+					<!--作者的吐槽部分-->
+					<div class="teasing">
+						<span>最新吐槽</span><br>
+						<span class="photo fa fa-user-o"></span>
+						<span class="teasing-content"><i style="color:rgb(6,188,156)">飞舟</i><i style="color:black; opacity: 0.4; font-size:10px;">1年前(2015-11-17)说:谢谢额！</i></span>
+						<span style="clear:both"></span>
+					</div>
+					<div class="data">
+						<span class="data-title">文章日历表</span>
+						<hr>
+						<!--这里是本页面的日历部分-->
+						<span id="data-header" class="data-header"></span>
+						<table class="data-table">
+							<tr>
+								<td>一</td>
+								<td>二</td>
+								<td>三</td>
+								<td>四</td>
+								<td>五</td>
+								<td>六</td>
+								<td>日</td>
+							</tr>
+							<tr>
+								<td id="1-1" colspan="2"></td>
+								<td id="2-1">1</td>
+								<td id="3-1">2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td id="1-2">6</td>
+								<td id="2-2">7</td>
+								<td id="3-2">8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td id="1-3">13</td>
+								<td id="2-3">14</td>
+								<td id="3-3">15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td id="1-4">20</td>
+								<td id="2-4">21</td>
+								<td id="3-4">22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td id="1-5">27</td>
+								<td id="2-5">28</td>
+								<td colspan="5"></td>
+							</tr>
+						</table>
+					</div>
+				</div><!--contentright的结束部分-->
+				
+				<!--下面板块为本页面的文章内容板块-->
+				<div class="content-article">
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					
+					</div>
+					
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					
+					</div>
+			
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					
+					</div>
+							
+					<!--萌妹子必备-->			
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					</div>
+					
+					<!--如何在PPT中设置移动鼠标出现文字-->
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					</div>
+		
+					<!--同名文件被覆盖后可以恢复吗-->
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					</div>
+					
+					<!--你是否经常遇见下载的PPT或者word打不开-->
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					
+					</div>
+				
+					<!--500多张Window10 Windows8扁平化风格-->
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					</div>
+					
+					<!--你所不知道的PPT中的快捷键-->	
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					
+					</div>	
+					
+					<!--设计师必备扁平化图标-->
+					<div class="article-1">
+						<div class="web-front">
+							<span class="meta-web">Web前端</span>
+							<span class="meta-meta">meta标签全解</span>
+							<div class="meta-sj2"></div>
+						</div>
+						<div class="thumbnail-meta">
+							
+						</div>
+						<div class="article-content1 article-content">
+							站点导航： http-equiv name 其他 &lt;meta&gt;元素可提供相关页面的元信息(meta
+							-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是
+								html语言里的一个辅助性标签，里面的内容不会显示在...
+						</div>
+						<div class="meta-talk">
+							<div class="fa fa-user-circle" aria-hidden="true"></div>
+							<div class="meta-user" style="width:80px;">faychou1989</div>
+							<div class="fa fa-clock-o" aria-hidden="true"></div>
+							<div class="meta-time" style="width:90px;">7个月前 (07-07)</div>
+							<div class="fa fa-thermometer-empty" aria-hidden="true"></div>
+							<div class="meta-hot" style="width:40px">1134℃</div>
+							<div class="fa fa-comment" aria-hidden="true"></div>
+							<div class="meta-about" style="width:35px;">0评论</div>
+							<div class="fa fa-heart-o" aria-hidden="true"></div>
+							<div class="meta-like" style="width:40px;">33喜欢</div>
+						</div>
+					</div>
+				
+				<!--页面底部区域-->
+					<div class="footer">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>下一页</li>
+						</ul>
+					</div>
+					
+				</div>	
+			</div>
+			<div class="backtop" id="backtop" onclick="back()">
+				
+			</div>
+			<!--网站维护相关信息-->
+		<div class="footer-info">
+			<div>
+				<span>主题来源：欲思博客 · 基于WordPress构建 · 由 飞舟 后期开发与维护  备案号: 蜀ICP备16030214</span>
+			</div>
+		</div>
+	
+	<script src="js/index.js"></script>	
+	</body>
+</html>

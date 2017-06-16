@@ -1,0 +1,154 @@
+html,body,div,nav,ul,li,a,span {
+	margin:0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.a-href {
+	width: 260px;
+	margin: 10px auto;
+}
+
+.a-href .all{
+	color:#000;
+	text-shadow:0 0 2px #ccc;
+}
+
+.a-href .good{
+	color: #f00;
+	text-shadow:0 0 2px #f00;
+}
+
+a {
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+}
+a:hover {
+	text-decoration: none;
+}
+.navbar {
+	background: black;
+}
+
+.logo {
+	padding: 10px;
+}
+
+.collapse {
+	width: 100%;
+}
+
+.collapse h3 {
+	width: 50%;
+}
+.collapse h3 span {
+	color: #fff;
+	margin-left: 20px;
+}
+
+a.proj{
+	color:#fff;
+	font-size:20px;
+}
+
+.collapse h3 a {
+	margin-left: 10px;
+}
+
+.collapse .form-group{
+	position:relative;
+	right:20px;
+}
+
+.collapse input {
+	width: 100%;
+	margin-top: 20px;
+	
+}
+
+/*优秀作品*/
+h2.title {
+	text-align: center;
+    margin-top: 20px;
+}
+p.words{
+    text-align: center;
+    margin-top: 10px;
+}
+
+p.words a{
+	color: #72326C;
+	font-size:22px;
+}
+
+p.word{
+	text-align: center;
+	margin-top: 10px;
+}
+
+p.word a{
+	font-size:18px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+p.word a:hover{
+	font-weight:900;
+}
+
+.myimg{
+	border:10px dashed #ddd;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.myimg:hover{
+	box-shadow:0 0 12px black;
+	border:10px solid #fff;
+}
+
+/*全部作品*/
+.md4,.md7{
+	margin-top:20px;
+}
+
+h4 a{
+	font-size:18px;
+}
+
+.allimg{
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
+	-webkit-animation: myallimg 2s linear;
+	-o-animation: myallimg 2s linear;
+	animation: myallimg 2s linear;
+}
+
+@keyframes myallimg {
+	0% { transform: rotate(0)}
+	50% {transform-origin: 0% 50%; transform: rotateY(28deg)}
+	100% { transform: rotate(0)}
+}
+.allimg:hover{
+	box-shadow:12px 12px 8px #ccc;
+}
+
+.footer{
+	width:100%;
+	height:70px;
+	background: #575757;
+}

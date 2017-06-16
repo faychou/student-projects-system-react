@@ -1,0 +1,1067 @@
+/*重置*/
+html,body,div,p,a,ul,li,span,h1,h2,h3,h4,h5,h6,address{
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+address {
+	display: block;
+}
+
+ body {
+ 	min-width: 1200px;
+ }
+/*清楚浮动影响*/
+.clearfix:before,.clearfix:after {
+	content: "",
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*banner的css*/
+.banner {
+	width:100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+.container-a {
+	width:1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.banner-bg {
+	width:100%;
+	height:1330px;
+	background: url(../images/banner.png);
+	position: absolute;
+	top:-110px;
+	z-index: -1;
+}
+
+/*banner上面的第一行文字*/
+
+.banner-case {
+	width:600px;
+	height: 40px;
+	border:1px solid #eee;
+	border-bottom: 1px solid white;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	text-align: center;
+	line-height: 40px;
+	position: relative;
+	top:400px;	
+}
+	
+.banner-case span:nth-child(odd) {
+	color:#eee;
+	font-size:24px;
+	letter-spacing:2px;
+}
+
+.banner-case span:nth-child(2) {
+	color:#fe1e00;
+	font-size: 24px;
+	letter-spacing: 2px;
+} 
+/*文字全端工程师*/
+
+.banner-text {
+	margin-top: 10px;
+	text-align: center;
+	font-size:75px;
+	color:#da4147;
+	font-weight: 900;
+	text-shadow:0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff;
+	position:relative;
+	top:-300px;
+}
+	
+.banner-foot ul {
+	margin-left:200px;
+}
+
+.banner-foot ul li {
+	width:450px;
+	list-style: none;
+	display: inline-block;
+	margin-top: 20px;
+	font-weight: 800;
+	color: #eee;
+	position:relative;
+	left:-1000px;
+}
+
+.banner-foot ul li:nth-child(even) {
+	width: 300px;
+	margin-left: 50px;
+	left:1000px;
+}
+	
+.banner-foot ul li:hover {
+	color:orangered;
+}
+
+/*WEB前端多元化方向开始*/
+.development {
+	font-size: 40px;
+	font-weight:700 ;
+	text-align: center;
+	margin-top: 20px;
+	opacity: 0;
+}
+
+.development span:nth-child(2) {
+	color: #e44030;
+}
+
+/*图标公用的属性*/
+.public-sign1 {
+	width:120px;
+	height: 120px;
+	border-radius:50%;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	-webkit-transition:transform 1s ;
+	-moz-transition: transform 1s;
+	-ms-transition:transform 1s ;
+	-o-transition:transform 1s ;
+	transition:transform 1s;
+}
+
+.public-signa {
+	background: url(../images/12.png);
+	position:absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right:0;
+	margin: auto;	
+}
+
+.public-sign1:hover{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform:rotate(360deg) ;
+	background: #07427e;
+} 
+
+.public-sign1:hover ~ a {
+	color:orangered;
+}
+
+.public-sign-text {
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+}
+
+.public-fl {
+	float:left;
+	opacity: 0;
+	position:relative;
+	top:-200px;
+}
+
+/*第一个图标*/
+
+.fl1 {
+	margin-left:200px;	
+}
+
+.frist-sign1 {
+	background: #7ecef4;		
+}
+
+.frist-signa {
+	width:55px;
+	height:63px;
+	background-position: 301px 0px;	
+}
+
+.frist-sign1-text {
+	margin-left:25px;
+}
+
+/*第二个图标*/
+.fl2 {	
+	margin-left:100px;	
+}
+
+.frist-sign2 {
+	background:#adc598;
+}
+
+.frist-signb {
+	width:66px;
+	height:26px;
+	background: url(../images/12.png);
+	background-position: 181px 0px;
+}
+
+.frist-sign2-text {
+	margin-left:35px;
+}
+
+/*第三个图形*/
+.fl3  {
+	margin-left:100px;
+}
+
+.frist-sign3 {
+	background:#f6802e;
+}
+	
+.frist-signc {
+	width:56px;
+	height:49px;
+	background: url(../images/12.png);
+	background-position: 115px 0px;	
+}
+
+.frist-sign3-text {
+	margin-left:20px;
+}
+
+/*第四个图标*/
+.fl4 {
+	margin-left:100px;
+}
+
+.frist-sign4 {
+	background:#cfa972;
+	margin-right: 200px;
+}
+	
+.frist-signd {
+	width:59px;
+	height:49px;
+	background: url(../images/12.png);
+	background-position: 59px 0px;	
+}
+
+.frist-sign4-text {
+	margin-left:20px;
+}
+
+/*第五个图标*/
+.fl5 {
+	margin-left:200px;	
+}
+
+.frist-sign5 {
+	background:#eb6877;	
+}
+	
+.frist-signe {
+	width:66px;
+	height:53px;
+	background: url(../images/12.png);
+	background-position: 247px 0px;	
+}
+
+.frist-sign5-text {
+	margin-left:20px;
+}
+
+/*第六个图标*/
+.fl6 {
+	margin-left:100px;
+}
+
+.frist-sign6 {
+	background:#84ccc9;	
+}
+	
+.frist-signf {
+	width:57px;
+	height:57px;
+	background: url(../images/12.png);
+	background-position: 357px 0px;	
+}
+
+.frist-sign6-text {
+	margin-left:10px;
+}
+
+/*第七个图标*/
+.fl7 {
+	margin-left:100px;
+}
+
+.frist-sign7 {
+	background:#f8b551;	
+}
+	
+.frist-signg {
+	width:54px;
+	height:53px;
+	background: url(../images/12.png);
+	background-position: 411px 0px;	
+}
+
+.frist-sign7-text {
+	margin-left:0px;
+}
+
+/*第八个图标*/
+.fl8 {
+	margin-left:100px;
+	width:200px;
+	height: 200px;
+}
+
+.frist-sign8 {
+	background:#f29c9f;	
+}
+	
+.frist-signh {
+	width:54px;
+	height:53px;
+	background: url(../images/12.png);
+	background-position: 465px 0px;	
+}
+
+.frist-sign8-text {
+	margin-left:5px;
+} 
+
+/*第一部分结束*/
+
+
+
+/*现状及前景*/
+.develop {
+	opacity: 0; 
+	text-align: center;
+	padding-top: 40px;
+}
+
+.subdevelop,.develop-now {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 100px; 
+}
+
+.develop-now {
+	color: rgb(228,64,37);
+}
+
+/*岗位缺口*/
+.subneed {
+	width: 90%;
+	text-align: ;
+	opacity: 0; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.neednum {
+	color: rgb(228,64,37);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+/*引入图表*/
+/*金字塔图表*/
+.gold-chart {
+	opacity: 0; 
+	float: left;
+}
+
+.golds {
+	width: 500px;
+	height: 400px; 
+	margin-left: -80px;
+	display: inline-block;
+}
+
+/*灰色人物图片*/
+.person {
+	width: 239px;
+	height: 53px;
+	position: relative;
+	top:-60px;
+	left: 25px;
+	background: url(../images/person.png) no-repeat;
+	background-size: 200px;
+}
+
+/*文字叙述*/
+.industry {
+	width: 350px;
+	line-height: 30px;
+	position: relative;
+	top:-40px;
+	left: -46px;
+}
+
+.subindustry1 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.subindustry2 {
+	font-size: 12px;
+}
+
+/*饼状图*/
+.pancakes {
+	opacity: 0; 
+	width: 450px;
+	height: 500px;
+	margin-top: -100px; 
+	float: right;
+}
+
+/*工资收入水平*/
+.money {
+	opacity: 0; 
+	width: 200px;
+	text-align: center;
+	margin:auto;
+	margin-top: 100px;  
+}
+
+.money p {
+	margin-top: 10px;
+}
+
+.submoney {
+	width: 180px;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgb(255,0,0);
+	font-size: 28px;
+	font-weight: 600;
+	color: #fff;
+	margin: auto;
+	margin-top: 10px; 
+}
+
+
+/*课程领头人*/
+.course-leader {
+	opacity: 0;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.course-leader span {
+	color:#e44025;
+}
+
+/*中间渐变色部分网页*/
+.lg {
+	width: 100%;
+	height: 450px;
+	background:-webkit-linear-gradient(to bottom,rgb(255,245,241),#fff);
+	background:-moz-linear-gradient(to bottom,rgb(255,245,241),#fff);
+	background:-o-linear-gradient(to bottom,rgb(255,245,241),#fff);
+	background:linear-gradient(to bottom,rgb(255,245,241),#fff);
+}
+
+/*所有的定宽为1200的div块居中*/
+.content,.develop,.need,.chart {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*介绍内容,岗位缺口，引入图表居中*/
+.center-content, .subchart {
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*人物经验介绍*/
+.experience {
+	padding-top: 100px;
+	float: left;
+	opacity: 0; 
+}
+
+.experience p {
+	margin-bottom: 10px; 
+}
+
+.experiencetext{
+	font-size: 30px;
+	font-weight: 600;
+	color: rgb(251,115,60);
+}
+
+.teachertext {
+	font-size: 20px;
+	font-weight: 600;
+	color: rgb(255,160,123); 
+	margin-top: 15px;
+	padding-bottom: 15px;   
+}
+
+/*人物名字 领头人*/
+.name {
+	width: 100px;
+	margin-top:240px;
+	margin-left: 150px;
+	float: left; 
+}
+
+/*人物名字*/
+.zfname {
+	width: 0;
+	height: 47px;
+	background: url(../images/zftext.png) no-repeat;
+	margin-left: 16px;
+}
+
+/*领头人*/
+.leader {
+	width: 110px;
+	line-height: 30px;
+	text-align: center;
+	border: 3px solid rgb(251,124,73);
+	font-size: 16px;
+	color: rgb(251,124,73);
+	margin-top: 20px; 
+	animation: leaderup 1s;
+	opacity: 0; 
+}
+
+/*人物图片*/
+.bgzhouf {
+	width: 263px;
+	height: 433px;
+	background: url(../images/zhouf.png) no-repeat;
+	background-size: 260px;
+	margin-top: 35px; 
+	float: right;
+	opacity: 0; 
+}
+/*中间部分结束*/
+
+
+/*第三部分开始*/
+
+/*课程优势开始*/
+/*课程优势背景图*/
+.adv-course{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg1.png);
+}
+
+.adv-course-inner {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*标题*/
+.adv-course-header{
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 70px;
+	opacity: 0;
+}
+
+/*红色字体*/
+.adv-course-header span{
+	color: #e44025;
+}
+
+.adv1, .adv2, .adv3, .adv4 {
+	float: left;
+	margin-left: 20px;
+	opacity: 0;
+}
+/*红色图片*/
+.page1, .pages {
+	width: 270px;
+	height: 71px;
+	text-align: center;
+	background-image: url(../images/page.png);	
+}
+
+/*图片内字体样式*/
+.page1 p, .pages p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+	margin-left: 35px;
+	margin-top: 80px;
+}
+.page1 p {
+	line-height: 35px;
+}
+
+.pages p {
+	line-height: 71px;
+}
+
+/*文本框*/
+.msg {
+	width: 234px;
+	height: 200px;
+	background-color: #fff;
+	text-align: center;
+	margin-left: 36px;
+	margin-bottom: 80px;
+}
+
+/*框内字体样式*/
+.msg p {
+	font-size: 15px;
+	font-weight: 500;
+	color: #666;
+	line-height: 35px;
+	padding: 20px 15px 20px 15px;
+}
+/*课程优势结束*/
+
+
+/*课程大纲开始*/
+.lesson {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*标题样式*/
+.lesson-title {
+	opacity: 0;
+}
+.lesson-title h1 {
+	text-align: center;
+	color: #000;
+	font-size: 40px;
+	font-weight: 800;
+	margin-top: 50px;
+}
+
+.lesson-title span {
+	color: #e44025 ;
+}
+
+.lesson-main {
+	width: 100px;
+	height: 70px;
+	background-color: #0a91f0;
+	border-radius: 10px;
+	float: left;
+	margin-left: 60px;
+	margin-top: 30px;
+	text-align: center;
+	opacity: 0;
+}
+
+/*课程模块*/
+.lesson-main span {
+	font-size: 15px;
+	color: #fff;
+	padding: 10px;
+	line-height: 35px;
+}
+
+/*课程*/
+.lessons {
+	float: left;
+	margin-left: 55px;
+	opacity: 0;
+}
+
+.lessons p {
+	border: 2px solid  #ADC598;
+	text-align: center;
+	padding: 8px;
+	margin: 8px 5.5px;
+}
+
+/*高亮*/
+.lessons .light {
+	border: 2px solid coral;
+}
+/*课程大纲结束*/
+
+
+/*项目展示开始*/
+/*最外层的div样式*/
+.project_teacher {
+	position:relative;
+	margin-top:40px;
+	width:100%;
+	height:auto;
+}
+
+/*给每个单独的页面快设置样式*/
+.project_teacher>div:not(.study):not(.teacher) {
+	margin:auto;
+	width:1200px;
+}
+
+/*公司项目块的标题样式*/
+.project_title {
+	text-align: center;
+	font-size: 36px;
+	font-weight:800;
+	opacity: 0;
+}
+
+.project_title span:first-child {
+	color:rgb(229,65,38);
+	letter-spacing: 10px;
+}
+
+.project_title span:last-child {
+	color:black;
+	letter-spacing: 10px;
+}
+
+/*八个项目的展示部分*/
+.project_show{
+	position:relative;
+	margin-top:40px;
+	width:1200px;
+}
+
+.project_row_one, .project_row_two {
+	position:relative;
+	overflow: hidden;
+	height:300px;
+	position:relative;
+}
+
+.project_row_one>div, .project_row_two>div {
+	float:left;
+	position:relative;
+	width:280px;
+	height:220px;
+	margin: 20px 0 20px 20px;
+	background-color:white;
+	opacity: 0;
+}
+
+/*项目背景图片*/
+.project_one1 {
+	background: url(../images/pro1.png) no-repeat;
+	background-size: 100%;
+}
+
+.project_one2 {
+	background: url(../images/pro2.png) no-repeat;
+	background-size: 100%;
+}
+.project_one3 {
+	background: url(../images/pro3.png) no-repeat;
+	background-size: 100%;
+}
+.project_one4 {
+	background: url(../images/pro4.png) no-repeat;
+	background-size: 100%;
+}
+.project_one5 {
+	background: url(../images/pro5.png) no-repeat;
+	background-size: 100%;
+}
+.project_one6 {
+	background: url(../images/pro6.png) no-repeat;
+	background-size: 100%;
+}
+.project_one7 {
+	background: url(../images/pro7.png) no-repeat;
+	background-size: 100%;
+}
+.project_one8 {
+	background: url(../images/pro8.png) no-repeat;
+	background-size: 100%;
+}
+.project_row_one>div:first-child, .project_row_two>div:first-child {
+	margin-left:16px;
+}
+
+/*项目说明*/
+
+.project_span {
+	font-size: 16px;
+}
+.project_info {
+	overflow: hidden;
+	font-size: 14px;
+	opacity:0.7;
+	margin-top:220px;
+	margin-bottom: 20px;
+	color: #000;
+}
+/*项目块结束*/
+
+
+/*免费试学开始*/
+.learn {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg2.png);
+}
+
+.learn-inner {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.learn-header {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	opacity: 0;
+}
+
+/*免费试学标题*/
+.learn-header h1 {
+	font-size: 45px;
+	font-weight: 900;
+	color: #e44025;
+	text-align: center;
+}
+
+/*双下划线*/
+.none {
+	width: 78%;
+	border-top: red double;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+/*副标题*/
+.learn-subhead p {
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 20px;
+	opacity: 0;
+}
+
+/*免费试学标签*/
+.learn-free {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.learn-free ul li {
+	display: inline-block;
+	background-color: #e44025;
+	border-radius: 5px;
+	margin-left: 15px;
+	padding: 7px 15px;
+}
+
+.learn-free ul li a {
+	font-size: 16px;
+	color: #fff;
+}
+
+/*手指部分*/
+.hands {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+/*左边手*/
+.hands .hand-l {
+	position: absolute;
+	left: 410px;
+	top: -10px;
+	width: 43px;
+	height: 31px;
+	background: url(../images/hand.png) no-repeat;
+}
+
+.hands a {
+	color: #fff;
+	background-color: #009944;
+	border-radius: 5px;
+	padding: 10px 30px;
+}
+
+/*右边手*/
+.hands .hand-r {
+	position: absolute;
+	left: 747px;
+	top: -10px;
+	width: 43px;
+	height: 31px;
+	background: url(../images/hand.png) no-repeat -43px;
+}
+/*免费试学结束*/
+
+
+/*了解Web开始*/
+.web-inner {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*标题*/
+.web-inner h1{
+	color: #e44025;
+	font-weight: 700;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 80px;
+	opacity: 0;
+}
+
+/*黑色字体*/
+.web-inner h1 span{
+	color: #000;
+}
+
+.web-que {
+	float: left;
+	margin-left: 40px;
+}
+/*问题*/
+.questions {
+	width: 230px;
+	height: 200px;
+	border: 4px solid #ffaa00;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 80px;
+	margin-top: -30px;
+	margin-bottom: 60px;
+	position: relative;
+	opacity: 0;
+}
+
+/*文字内容*/
+.questions p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 100px;
+	color: #ffaa00;
+}
+
+/*第一列第一个*/
+.questions .icon1 {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	width: 60px;
+	height: 59px;
+	background: url(../images/pics.png) no-repeat;
+}
+
+.questions .p1 {
+	line-height: 20px;
+	padding: 10px;
+}
+
+/*第一列第二个*/
+.questions .icon2 {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	width: 60px;
+	height: 65px;
+	background: url(../images/pics.png) no-repeat 0 -65px;
+}
+
+.questions .p2 {
+	line-height: 20px;
+	padding: 10px 30px;
+}
+
+/*第二列第一个*/
+.questions .icon3 {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	width: 60px;
+	height: 60px;
+	background: url(../images/pics.png) no-repeat -60px 0px;
+}
+
+.questions .p3 {
+	line-height: 20px;
+	padding: 10px 40px;
+}
+
+/*第二列第二个*/
+.questions .icon4 {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	width: 60px;
+	height: 65px;
+	background: url(../images/pics.png) no-repeat -60px -65px;
+}
+
+.questions .p4 {
+	line-height: 20px;
+	padding: 10px 35px;
+}
+
+/*第三列第一个*/
+.questions .icon5 {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	width: 60px;
+	height: 65px;
+	background: url(../images/pics.png) no-repeat -120px 0px;
+}
+
+.questions .p5 {
+	line-height: 20px;
+	padding: 10px 35px;
+}
+
+/*第三列第二个*/
+.questions .icon6 {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	width: 60px;
+	height: 60px;
+	background: url(../images/pics.png) no-repeat -120px -70px;
+}
+
+.questions .p6 {
+	line-height: 20px;
+	padding: 10px 60px;
+}
+
+/*第三部分结束*/

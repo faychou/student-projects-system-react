@@ -1,0 +1,1113 @@
+			html,body,div,ul,li,dl,dd,i,p,span,a,b{
+				margin:0;
+				padding:0;
+			}
+			body{
+				overflow-x: hidden;
+			}
+			/*清除浮动的影响*/
+			.clearfix:before,.clearfix:after{
+				display:table;
+				content:" ";
+			}
+			.clearfix:after{
+				clear:both;
+			}
+			.clearfix{
+				*zoom:1;
+			}
+			/*标题栏*/
+			.headertop{
+				background: #1abc9c;
+				width:100%;
+				height:105px;
+			}
+			.headerlogo{
+				width:790px;
+				margin:auto;
+				text-align: center;
+			}
+			.headerlogo span{
+				height:105px;
+				line-height: 105px;
+				color:white;
+			}
+			.headerlogo .span1{
+				font-size:54px;
+			}
+			.headerlogo:hover{
+				letter-spacing: 5px;
+			}
+			.headerlogo:hover .span2{
+				opacity: .3;
+			}
+			.headerlogo .span2{
+				font-size:24px;
+				letter-spacing: -2px;
+			}
+			/*导航栏*/
+			.nav{
+				width:100%;
+				height:52px;
+				clear:both;
+				background:#4a4a4a;
+				opacity:0.9;
+			}
+			.navul{
+				position:relative;
+				width:1226px; 
+				height:52px;
+				margin:auto;
+			}		
+			.nav ul{
+				
+				list-style-type: none;
+				display:inline-block;
+			}
+			.nav ul li{
+				height:52px;
+				line-height: 52px;
+				display:inline-block;
+			}
+			.nav ul li.leftmove{
+				margin-left:-7px;
+			}
+			.nav ul li.homepage,.else{
+				background: rgb(22,155,133);
+			}
+			.nav ul li:hover{
+				background: rgb(22,155,133);
+			}
+			.nav ul li a{
+				padding:17px;
+				text-decoration: none;
+				color:white;
+				font-size:20px;	
+			}
+			.nav .fasearch{
+				display:inline-block;
+				float:right;
+				margin-right:50px;
+			}
+			.nav .fasearch i{
+				padding:16px;
+				font-size: 20px;
+				position:absolute;
+				color:white;
+				background: rgb(22,163,135);	
+			}
+			.nav .fasearch i:hover{
+				background: rgb(33,143,121);
+			}
+			.source{
+				position:relative;
+			}
+			.source .sourceul{
+				position:absolute;
+				width:130px;
+				height:0px;	
+			}
+			.source .sourceul li a{
+				height:auto;
+				font-size: 18px;
+			} 
+			.source .sourceul li{
+				margin:-1px;
+				width:130px;
+				margin-left:0px;
+				background: #1abc9c;
+				-webkit-transform: rotateY(90deg);
+			    -moz-transform: rotateY(90deg);
+			    -ms-transform: rotateY(90deg);
+			    -o-transform: rotateY(90deg);
+			    transform: rotateY270deg);
+			    -webkit-transition: opacity .4s, -webkit-transform .5s;
+			    -moz-transition: opacity .4s, -moz-transform .5s;
+			    -ms-transition: opacity .4s, -ms-transform .5s;
+			    -o-transition: opacity .4s, -o-transform .5s;
+			    transition: opacity .4s, transform .5s;
+			}
+			.source:hover .sourceul li{
+				-webkit-transform: none;
+			    -moz-transform: none;
+			    -ms-transform: none;
+			    -o-transform: none;
+			    transform: none;
+			}
+			.source:hover .sourceul li:nth-child(1) {
+			    -webkit-transition-delay: 0s;
+			    -moz-transition-delay: 0s;
+			    -ms-transition-delay: 0s;
+			    -o-transition-delay: 0s;
+			    transition-delay: 0s;
+			}
+			.source:hover .sourceul li:nth-child(2) {
+			    -webkit-transition-delay: 100ms;
+			    -moz-transition-delay: 100ms;
+			    -ms-transition-delay: 100ms;
+			    -o-transition-delay: 100ms;
+			    transition-delay: 100ms;
+			}
+			.source:hover .sourceul li:nth-child(3) {
+			    -webkit-transition-delay: 200ms;
+			    -moz-transition-delay: 200ms;
+			    -ms-transition-delay: 200ms;
+			    -o-transition-delay: 200ms;
+			    transition-delay: 200ms;
+			}
+			.source:hover .sourceul li:nth-child(4) {
+			    -webkit-transition-delay: 300ms;
+			    -moz-transition-delay: 300ms;
+			    -ms-transition-delay: 300ms;
+			    -o-transition-delay: 300ms;
+			    transition-delay: 300ms;
+			}
+			.source:hover .sourceul li:nth-child(5) {
+			    -webkit-transition-delay: 400ms;
+			    -moz-transition-delay: 400ms;
+			    -ms-transition-delay: 400ms;
+			    -o-transition-delay: 400ms;
+			    transition-delay: 400ms;
+			}
+			.else{
+				position: relative;
+			}
+			.else .elseul{
+				position: absolute;
+				z-index: 1;
+				width:130px;
+				height:0;
+			}
+			.else:hover .elseul{
+				display:block;
+			}
+			.else .elseul li a{
+				height:auto;
+				font-size: 18px;
+			}
+			.else .elseul li{
+				margin:-1px;
+				width:130px;
+				margin-left:0px;
+				background: #1abc9c;
+				-webkit-transform: rotateY(90deg);
+			    -moz-transform: rotateY(90deg);
+			    -ms-transform: rotateY(90deg);
+			    -o-transform: rotateY(90deg);
+			    transform: rotateY270deg);
+			    -webkit-transition: opacity .4s, -webkit-transform .5s;
+			    -moz-transition: opacity .4s, -moz-transform .5s;
+			    -ms-transition: opacity .4s, -ms-transform .5s;
+			    -o-transition: opacity .4s, -o-transform .5s;
+			    transition: opacity .4s, transform .5s;
+			}
+			.else:hover .elseul li{
+				-webkit-transform: none;
+			    -moz-transform: none;
+			    -ms-transform: none;
+			    -o-transform: none;
+			    transform: none;
+			}			
+			.else:hover .elseul li:nth-child(1) {
+		    -webkit-transition-delay: 0s;
+		    -moz-transition-delay: 0s;
+		    -ms-transition-delay: 0s;
+		    -o-transition-delay: 0s;
+		    transition-delay: 0s;
+			}
+			.else:hover .elseul li:nth-child(2) {
+			    -webkit-transition-delay: 100ms;
+			    -moz-transition-delay: 100ms;
+			    -ms-transition-delay: 100ms;
+			    -o-transition-delay: 100ms;
+			    transition-delay: 100ms;
+			}
+			.else:hover .elseul li:nth-child(3) {
+			    -webkit-transition-delay: 200ms;
+			    -moz-transition-delay: 200ms;
+			    -ms-transition-delay: 200ms;
+			    -o-transition-delay: 200ms;
+			    transition-delay: 200ms;
+			}
+			.else:hover .elseul li:nth-child(4) {
+			    -webkit-transition-delay: 300ms;
+			    -moz-transition-delay: 300ms;
+			    -ms-transition-delay: 300ms;
+			    -o-transition-delay: 300ms;
+			    transition-delay: 300ms;
+			}
+			.else:hover .elseul li:nth-child(5) {
+			    -webkit-transition-delay: 400ms;
+			    -moz-transition-delay: 400ms;
+			    -ms-transition-delay: 400ms;
+			    -o-transition-delay: 400ms;
+			    transition-delay: 400ms;
+			}
+			.enter{
+				position:relative;
+				width:100%;
+				height:40px;
+				background: rgb(238,238,238);
+			}
+			.enter1{
+			
+				width:1226px;
+				margin:auto;
+				background: rgb(251,251,251); 
+			}
+			.enter1 i{
+				line-height:40px;
+				color:darkseagreen;	
+			}
+			.enter1 .favolumeup{
+				float:left;
+				margin-left:16px;
+			}
+			.enter1 .fauser{
+				float:right;
+				margin-right:12px;
+			}
+			.enter1 span{
+				font-family: "microsoft yahei";
+				font-size: 14px;
+				color:rgb(102,102,102);
+			}
+			/*主题区*/
+			.mainpart{
+				width:px;
+				height:2564px;
+				background: rgb(238,238,238);
+			}
+			.mainpart1{
+				width:1226px;
+				height:2514px;
+				margin:auto;
+			}
+			/*主题左半区*/
+			.mainpart11{
+				float:left;
+				width:866px;
+				height:2514px;
+				clear:both;
+			}
+			.mainpart111{
+				height:310px;
+				width:866px;	 
+			}
+			.mainpart1111{
+				position:relative;
+				width:134px;
+				height:300px;
+				float:left;
+				margin-top:10px;
+				background: white;
+			}
+			.mainpart1111 dl dd{
+				width:132px;
+				height:69px;
+				margin-left:4px;
+				padding:3px;
+			}
+			.mainpart1112{
+				width:716px;
+				height:300px;
+				float:right;
+				margin-top:10px;
+				margin-right:3px;
+				background-size: cover;
+			}
+			.mainpart112,.mainpart113{
+				position:relative;
+				width:100%;
+				height:204px;
+				background: white;
+				margin-top:10px;
+			}
+			p{
+				height:40px;
+				line-height: 40px;
+			}
+			.mainpart112 p a{
+				position:relative;
+				top:18px;
+				left:20px;
+			}
+			.mainpart112 p b{
+				position:relative;
+				top:13px;
+				left:20px;
+				text-decoration: none;
+				color:rgb(0,166,124);
+				font-size:20px;
+			}
+			.mainpart112 div{
+				float:left;
+				width:200px;
+				height:123px;
+				overflow: hidden;
+				position:relative;
+				left:20px;
+				top:18px;
+			}
+			.mainpart112 div #img{
+				cursor: pointer;
+				transition: all 0.7s;
+				width:200px;
+				height:123px;
+				perspective-origin:bottom;
+			}
+			.mainpart112 span{
+				width:550px;
+				height:100px;
+				font-size: 14px;
+				color:rgb(161,119,161);
+				float:right;
+				margin-right:78px;
+				margin-top:23px;
+			}
+			.date{
+				display:block;
+				float:right;
+				position: relative;
+				bottom: 8px;
+				left:0px;
+			}
+			.date .fa{
+				color:rgb(153,153,153)
+			}
+			.mainpart113 p a{
+				position:relative;
+				top:18px;
+				left:20px;
+			}
+			.mainpart113 p b{
+				position:relative;
+				top:13px;
+				left:20px;
+				text-decoration: none;
+				color:rgb(0,166,124);
+				font-size:20px;
+			}
+			.mainpart113 a{
+				float:left;
+				clear:both;
+				position:relative;
+				left:20px;
+				top:18px;
+			}
+			.mainpart113 span{
+				width:550px;
+				height:100px;
+				font-size: 14px;
+				color:rgb(161,119,161);
+				float:right;
+				margin-right:78px;
+				margin-top:23px;
+			}
+			.mainpart113 .bigger{
+				float:left;
+				width:200px;
+				height:123px;
+				overflow: hidden;
+				position:relative;
+				left:20px;
+				top:18px;
+			}
+			.mainpart113 .big13{
+				background: url(../img/timthumb113.jpg);
+			}
+			.mainpart113 .big14{
+				background: url(../img/timthumb114.jpg);
+			}
+			.mainpart113 .big15{
+				background: url(../img/timthumb115.jpg);
+			}
+			.mainpart113 .big16{
+				background: url(../img/timthumb116.jpg);
+			}
+			.mainpart113 .big17{
+				background: url(../img/timthumb117.jpg);
+			}
+			.mainpart113 .big18{
+				background: url(../img/timthumb118.jpg);
+			}
+			.mainpart113 .big19{
+				background: url(../img/timthumb119.jpg);
+			}
+			.mainpart113 .big1a{
+				background: url(../img/timthumb11a.jpg);
+			}
+			.mainpart113 .big1b{
+				background: url(../img/timthumb11b.jpg);
+			}
+			.mainpart113:hover .bigger{
+				background-size: 210px 129px;
+			}
+			/*下一页*/
+			.mainpart11c{
+				width:100%;
+				height:70px;
+				border:0px solid red;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart11c dl{
+				position:relative;
+				top:22px;
+				color:#4A4A4A;
+				height:27px;
+				line-height: 27px;
+			}
+			.mainpart11c dl dd{
+				display:inline-block;
+				width:33px;
+				height:27px;
+				text-align: center;
+				background: rgb(238,238,238);
+			}
+			.mainpart11c dl .one{
+				background: rgb(0,166,124);
+				color:white;
+			}
+			.mainpart11c dl .dd:hover{
+				background: rgb(111,194,153);
+				color:white;
+			}
+			.mainpart11c .mainpart11c1{
+				width:290px;
+				height:27px;				
+				margin:auto;
+			}
+			.mainpart11c .mainpart11c1 .button{
+				display:inline-block;
+				background: blu;
+				border:0;
+				width:66px;
+				height:27px;
+			}
+			/*主题右半区*/
+			.mainpart12{
+				width:350px;
+				float:right;
+				height:1969px;
+				 
+			}
+			.mainpart121{
+				position: relative;
+				width:100%;
+				height:65px;
+				display:inline-block;
+				line-height: 65px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart121 .fa-weibo{
+				font-size:35px;
+				margin-top:10px;
+				margin-left:13px;
+				padding:5px;
+				color:white;
+				border-radius: 5px 5px 5px 5px;
+				background:rgb(247,133,133);
+			}
+			.mainpart121 .fa:hover{
+				background:rgb(127,180,171);
+			}
+			.mainpart121 dl dd{
+				display:inline-block;
+			}
+			.mainpart121 .sina-img{
+				display:none;
+				position:absolute;
+				top:-28px;
+				right:280px;
+			}
+			.sina:hover div{
+				display:block;
+			}
+			.mainpart121 .tencent-img{
+				display:none;
+				position:absolute;
+				top:-28px;
+				right:225px;
+			}
+			.mainpart121 .weixin-img{
+				display:none;
+				position:absolute;
+				top:57px;
+				right:74px;
+			}
+			.mainpart121 .emeil-img{
+				display:none;
+				position:absolute;
+				top:-28px;
+				right:115px;
+			}
+			.mainpart121 .qq-img{
+				display:none;
+				position:absolute;
+				top:-28px;
+				right:61px;
+			}
+			.mainpart121 .rss-img{
+				display:none;
+				position:absolute;
+				top:-28px;
+				right:5px;
+			}
+			.mainpart121 .fa-tencent-weibo{
+				font-size:35px;
+				margin-top:10px;
+				margin-left:2px;
+				padding:5px;
+				padding-left:10px;
+				padding-right:10px;
+				color:white;
+				border-radius: 5px 5px 5px 5px;
+				background:rgb(39,204,192);
+			}
+			.mainpart121 .fa-weixin{
+				font-size:35px;
+				margin-top:10px;
+				margin-left:2px;
+				padding:5px;
+				padding-left:2.5px;
+				padding-right:2.5px;
+				color:white;
+				border-radius: 5px 5px 5px 5px;
+				background:rgb(111,194,153);
+			}
+			.mainpart121 .fa-envelope-o{
+				font-size:35px;
+				margin-top:10px;
+				margin-left:2px;
+				padding:5px;
+				padding-left:5px;
+				padding-right:5px;
+				color:white;
+				border-radius: 5px 5px 5px 5px;
+				background:rgb(236,163,172);
+			}
+			.mainpart121 .fa-qq{
+				font-size:35px;
+				margin-top:10px;
+				margin-left:2px;
+				padding:5px;
+				padding-left:5px;
+				padding-right:5px;
+				color:white;
+				border-radius: 5px 5px 5px 5px;
+				background:rgb(231,76,70);
+			}
+			.mainpart121 .fa-rss{
+				font-size:35px;
+				margin-top:10px;
+				margin-left:2px;
+				padding:5px;
+				padding-left:10px;
+				padding-right:10px;
+				color:white;
+				border-radius: 5px 5px 5px 5px;
+				background:rgb(255,124,73);
+			}
+			
+			.mainpart122{
+				width:100%;
+				height:143px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart122 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart122 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart122 input{
+				height:32px;
+				width:230px;
+				background: rgb(247,247,247);
+				border:0;
+				margin-left:20px;
+			}
+			.mainpart122 button{
+				height:32px;
+				width:74px;
+				font-size: 15px;
+				font-family: "微软雅黑";
+				background: rgb(26,188,156);
+				border:0;
+				border-bottom: 3px solid rgb(26,188,156);
+				margin-left:-9px;
+			}
+			.mainpart122 button a{
+				color:rgb(255,255,251);
+				text-decoration: none;
+			}
+			.mainpart122 button:hover{
+				background: rgb(22,160,133);
+				border-bottom: 3px solid rgb(22,160,133);
+			}
+			.mainpart123{
+				width:100%;
+				height:141px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart123 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart123 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart1231{
+				margin:15px;
+			}
+			.mainpart1231 a{
+				font-family: "微软雅黑";
+				font-size: 14px;
+				color:rgb(0,166,124);
+				text-decoration: none;
+			}
+			.mainpart1231 a:hover{
+				color:rgb(98,98,98);
+			}
+			.mainpart12311{
+				width:150px;
+				height:20px;
+				display:inline-block;
+			}
+			.mainpart12312{
+				width:150px;
+				height:20px;
+				display:inline-block;
+			}
+			
+			.mainpart124{
+				width:100%;
+				height:228px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart124 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart124 hr{
+				margin-left:25px;
+				width:300px;	
+			}
+			.mainpart1241{
+				position:relative;
+				width:300px;
+				height:150px;
+				margin:auto;
+				margin-top:15px;
+			}
+			.mainpart1241 a{
+				text-decoration: none;
+				line-height: 25px;
+				margin-left:5px;
+				color:white;
+				font-family: "微软雅黑";
+			}
+		/*标签云中鼠标移到office(25)上*/
+			.mainpart1241 .office{
+				position:absolute;
+				top:-30px;
+				left:40px;
+				display:none;
+			}
+			.mainpart1241 .lable1:hover{
+				background: rgb(22,162,135);
+			}
+			.mainpart1241 .lable1:hover .office{
+				display:block;
+			}
+		/*标签云中鼠标移动到ppt(20)上*/
+			.mainpart1241 .ppt{
+				position:absolute;
+				top:-30px;
+				left:193px;
+				display:none;
+			}
+			.mainpart1241 .lable2:hover{
+				background: rgb(92,184,92);
+			}
+			.mainpart1241 .lable2:hover .ppt{
+				display:block;
+			}
+		/*标签云中鼠标移动到计算机(20)上*/
+			.mainpart1241 .jsj{
+				position:absolute;
+				top:0px;
+				left:40px;
+				display:none;
+			}
+			.mainpart1241 .lable3:hover{
+				background: rgb(217,83,79);
+			}
+			.mainpart1241 .lable3:hover .jsj{
+				display:block;
+			}
+		/*标签云中鼠标移动到资源搜索(10)上*/
+			.mainpart1241 .zyss{
+				position:absolute;
+				top:0px;
+				left:193px;
+				display:none;
+			}
+			.mainpart1241 .lable4:hover{
+				background: rgb(86,126,149);
+			}
+			.mainpart1241 .lable4:hover .zyss{
+				display:block;
+			}
+		/*标签云中鼠标移动到网络安全(9)上*/
+			.mainpart1241 .wlaq{
+				position:absolute;
+				top:30px;
+				left:40px;
+				display:none;
+			}
+			.mainpart1241 .lable5:hover{
+				background: rgb(180,51,255);
+			}
+			.mainpart1241 .lable5:hover .wlaq{
+				display:block;
+			}
+		/*标签云中鼠标移动到excel(6)上*/
+			.mainpart1241 .excel{
+				position:absolute;
+				top:30px;
+				left:193px;
+				display:none;
+			}
+			.mainpart1241 .lable6:hover{
+				background: rgb(0,166,124);
+			}
+			.mainpart1241 .lable6:hover .excel{
+				display:block;
+			}
+		/*标签云中鼠标移动到图片资源(6)上*/
+			.mainpart1241 .tpzy{
+				position:absolute;
+				top:60px;
+				left:40px;
+				display:none;
+			}
+			.mainpart1241 .lable7:hover{
+				background: rgb(179,115,51);
+			}
+			.mainpart1241 .lable7:hover .tpzy{
+				display:block;
+			}
+		/*标签云中鼠标移动到word(20)上*/
+			.mainpart1241 .word{
+				position:absolute;
+				top:60px;
+				left:193px;
+				display:none;
+			}
+			.mainpart1241 .lable8:hover{
+				background: rgb(255,102,0);
+			}
+			.mainpart1241 .lable8:hover .word{
+				display:block;
+			}
+		/*标签云中鼠标移动到互联网(4)上*/
+			.mainpart1241 .hlw{
+				position:absolute;
+				top:90px;
+				left:40px;
+				display:none;
+			}
+			.mainpart1241 .lable9:hover{
+				background: rgb(74,74,74);
+			}
+			.mainpart1241 .lable9:hover .hlw{
+				display:block;
+			}
+		/*标签云中鼠标移动到网络(3)上*/	
+			.mainpart1241 .wl{
+				position:absolute;
+				top:90px;
+				left:193px;
+				display:none;
+			}
+			.mainpart1241 .lable10:hover{
+				background: rgb(21,162,135);
+			}
+			.mainpart1241 .lable10:hover .wl{
+				display:block;
+			}
+			.mainpart1241 .lable1{
+				height:25px;
+				width:148px;
+				display:inline-block;
+				background: rgb(91,190,171);
+			}
+			.mainpart1241 .lable2{
+				height:25px;
+				width:147px;				
+				margin-left:-3px;
+				display:inline-block;
+				background: rgb(141,205,141);
+			}
+			.mainpart1241 .lable3{
+				height:25px;
+				width:148px;
+				margin-top:5px;
+				display:inline-block;
+				background: rgb(228,135,132);
+			}
+			.mainpart1241 .lable4{
+				height:25px;
+				width:147px;
+				margin-left:-3px;
+				display:inline-block;
+				background: rgb(137,165,181);
+			}
+			.mainpart1241 .lable5{
+				height:25px;
+				width:148px;
+				margin-top:5px;
+				display:inline-block;
+				background: rgb(202,112,255);
+			}
+			.mainpart1241 .lable6{
+				height:25px;
+				width:147px;
+				margin-left:-3px;
+				display:inline-block;
+				background: rgb(77,193,163);
+			}
+			.mainpart1241 .lable7{
+				height:25px;
+				width:148px;
+				margin-top:5px;
+				display:inline-block;
+				background: rgb(202,157,112);
+			}
+			.mainpart1241 .lable8{
+				height:25px;
+				width:147px;
+				margin-left:-3px;
+				display:inline-block;
+				background: rgb(255,148,77);
+			}
+			.mainpart1241 .lable9{
+				height:25px;
+				width:148px;
+				margin-top:5px;
+				display:inline-block;
+				background: rgb(128,128,128);
+			}
+			.mainpart1241 .lable10{
+				height:25px;
+				width:147px;
+				margin-left:-3px;
+				display:inline-block;
+				background: rgb(91,190,171);
+			}
+			.mainpart125{
+				width:100%;
+				height:245px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart125 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart125 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart125 dd{
+				height:30px;
+				margin-top: 8px;
+				margin-left:14px;
+			}
+			.mainpart125 a{
+				font-size:14px;
+				font-family: "微软雅黑";
+				color:rgb(0,166,124);
+				text-decoration: none;
+			}
+			.mainpart125 a:hover{
+				color:rgb(0,112,70);
+			}
+			.mainpart126{
+				width:100%;
+				height:506px;
+				background: white;
+				margin-top:10px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			.mainpart126 div a:hover{
+				color:rgb(217,83,79);
+			}
+			.mainpart126 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart126 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart126 dd{
+				width:300px;
+				height:87px;
+				margin-top:35px;
+				margin:auto;
+				border-bottom:1px solid rgb(238,238,238);
+			}
+			.mainpart126 a{
+				color:rgb(0,166,124);
+				text-decoration: none;
+			}
+			
+			.mainpart127{
+				width:100%;
+				height:75px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart127 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart127 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart128{
+				width:100%;
+				height:144px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart128 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart128 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart128 .new{
+				width:300px;
+				height:73px;
+				background:;
+				margin:auto;
+			}
+			.mainpart128 .new i{
+				font-size:48px;
+				color:white;
+		
+				padding-left:5px;
+				margin-top:17px;;
+				padding-right:5px;
+				padding-top:5px;
+				background: rgb(197,197,197);
+			}
+			.mainpart128 .new span{
+				margin-top:15px;
+				display:block;
+				float:right;
+			}
+			.mainpart129{
+				width:100%;
+				height:341px;
+				background: white;
+				margin-top:10px;
+			}
+			.mainpart129 p{
+				margin-left:20px;
+				color:rgb(26,188,168);
+			}
+			.mainpart129 hr{
+				margin-left:20px;
+				width:300px;
+			}
+			.mainpart129 div{
+				position:relative;
+				padding:18px;
+			}
+			.mainpart129 div table{
+				color:gray;
+			}
+			.mainpart2{
+				width:100%;
+				height:70px;
+				margin-top:17px;
+				background: red;
+				margin-bottom: 0;
+			}
+			.mainpart21{
+				width:100%;
+				height:10px;
+				background: rgb(215,215,215);
+			}
+			.mainpart22{
+				width:100%;
+				height:10px;
+				background: rgb(0,166,124);
+			}
+			.mainpart23{
+				width:100%;
+				height:50px;
+				background: rgb(52,52,52);
+			}
+			.mainpart231{
+				color:rgb(158,158,129);
+				font-family: "微软雅黑";
+				line-height:50px;
+				font-size: 14px;
+				margin-left:11%;
+			}
+			@media screen and (max-width:1230px){
+				.mainpart11{
+					width:500px;
+				}
+				.enter1{
+					position:absolute;
+					right:1px;
+				}
+				.mainpart12{
+					position: absolute;
+					right: 1px;
+				}
+				.mainpart1111{
+					display:none;
+				}
+			}
+			@media screen and (max-width:980px){
+				.enter{
+					display:none;
+				}
+				.mainpart12{
+					display:none;
+				}
+				.mainpart1111{
+					display:block;
+				}
+				.mainpart111{
+					width:866px;
+				}
+				.mainpart112,.mainpart113{
+					width:950px;
+				}
+			}
+			@media screen and (max-width:880px){
+				.mainpart11{
+					width:273px;
+				}
+			}
+			

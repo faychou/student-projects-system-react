@@ -1,0 +1,218 @@
+*{
+			margin:0;
+			padding:0;	
+		}
+		body{
+			font-family: "微软雅黑";
+			height:8888px;
+		}
+		.header{
+			height:58px;
+			
+			background-color:#191d3a;
+		}
+		.inner_c{
+			width:1000px;
+			margin:0 auto;
+		}
+		.header .logo{
+			float:left;
+			width:174px;
+			height:58px;
+			padding-left:12px;
+			margin-right:39px;
+		}
+		.header .logo a{
+			display: block;
+			width: 174px;
+			height: 58px;
+			background:url(../images/logo.png) no-repeat;
+			text-indent: -999em;
+		}
+		.header .nav{
+			width:607px;
+			height:58px;
+			float:left;
+		}
+		.header .nav ul{
+			list-style:none;
+		}
+		.header .nav ul li{
+			float:left;
+			width:100px;
+			height:58px;
+			border-left:1px solid #252947;
+		}
+		.header .nav ul li.current a{
+			background-color:#252947;
+			color:#e2e4ed;
+		}
+		.header .nav ul li a{
+			display:block;
+			height:58px;
+			width:100px;
+			text-align:center;
+			line-height:58px;
+			color:#818496;
+			font-size:14px;
+			text-decoration:none;
+		}
+		.header .nav ul li a:hover{
+			background-color:#252947;
+			color:#e2e4ed;
+		}
+		.header .jrwm{
+			float:left;
+			padding-top:12px;
+			padding-left:48px;
+		}
+		.header .jrwm a{
+			display:block;
+			width:98px;
+			height:32px;
+			background-color:#38b774;
+			text-align:center;
+			border-radius:4px;
+			text-decoration:none;
+			line-height:32px;
+			border:1px solid #3aca7a;
+			color:white;
+			font-size:14px;
+		}
+		.header .jrwm a:hover{
+			background-color:#48c784;
+		}
+		.cl{
+			clear:both;
+		}
+		.banner{
+			height:465px;
+			background: url(../images/banner.jpg) no-repeat center center;
+		}
+		.content{
+			padding-top:50px;
+			height:650px;
+			background:url(../images/indexmainbg.jpg) no-repeat center bottom;
+		}
+		.content .product{
+			height:229px;
+			border-bottom:1px solid #dbe1e7;
+		}
+		.content .product ul{
+			list-style:none;
+		}
+		.content .product ul li{
+			float:left;
+			width:218px;
+			height:229px;
+			margin-right:43px;
+		}
+		.content .product ul li.last{
+			width:217px;
+			margin-right:0;
+		}
+		.content .product ul li h3{
+			text-align:center;
+			font-size:14px;
+			line-height:38px;
+			font-weight:bold;
+		}
+		.content .product ul li p.play{
+			text-align:center;
+		}
+		.content .product ul li p.play a{
+			font-size:12px;		
+			line-height:12px;
+			text-decoration:none;
+			color:#38b774;
+			padding-right:10px;
+			background:url(../images/sanjiaoxing.png)no-repeat right center;
+		}
+		.content .product ul li p.pro_image img{
+			width:100%;
+			height:130px;
+		}
+		.content .info{
+			padding-top:53px;
+		}
+		.content .info .boyaanews{
+			float:left;
+			width:500px;
+			background:url(../images/bynewsbg.jpg)no-repeat;
+			padding-top:111px;
+			position:relative;
+		}
+		.content .info .boyaanews .more{
+			position:absolute;
+			left:218px;
+			top:40px;
+			background-color:   ;
+		}
+		.content .info .boyaanews ul{
+			list-style:none;
+			padding:0 20px;
+		}
+		.content .info .boyaanews ul li{
+			line-height:50px;
+			font-size:12px;
+			border-bottom:1px solid #dbe1e7;
+		}
+		.content .info .boyaanews ul li span{
+			color:#afbecf;
+			margin-right:22px;
+		}
+		.content .info .boyaanews ul li a{
+			color:#444866;
+			font-size:14px;
+			text-decoration: none;
+		}
+		.content .info .boyaanews ul li a:hover{
+			color:orange;
+		}
+		.content .info .boyaajobs{
+			position:relative;
+			float:left;
+			width:500px;
+			height:314px;
+			background:url(../images/byhrbg3.jpg)no-repeat;
+		}
+		.content .info .boyaajobs .more2{
+			position:absolute;
+			top:40px;
+			left:218px;
+			background-color:   ;
+		}
+		.content .info .boyaajobs .title{
+			padding-top:40px;
+			padding-left:78px;
+		}
+		.content .info .boyaajobs .title h3{
+			width:119px;
+			height:51px;
+			background:url(../images/zczp.png)no-repeat;
+			text-indent:-999em;
+		}
+		.content .info .boyaajobs h4{
+			color:white;
+			padding-top:18px;
+			padding-left:20px;
+			font-size:14px;
+			font-weight:bold;
+		}
+		.content .info .boyaajobs ul{
+			list-style:none;
+			padding-left:20px;
+			width:305px;
+		}
+		.content .info .boyaajobs ul li{
+			border-bottom:1px solid #6fdea3;
+			line-height:37px;
+		}
+		.content .info .boyaajobs ul li a{
+			text-decoration:none;
+			color:white;
+			font-size:14px;
+		}
+		.content .info .boyaajobs ul li a:hover{
+			background-color:orange;
+		}

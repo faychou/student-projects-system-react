@@ -1,0 +1,187 @@
+﻿
+
+/* main container */.animatedButton{
+	font-family: Oswald, Arial, sans-serif;
+	text-decoration: none !important;
+	background-color:#a30e12;
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 38px;
+	line-height: 38px !important;
+	display: inline-block;
+	border: 1px solid #450003;
+	
+	text-shadow:0px 1px 1px #000;
+	
+	-webkit-box-shadow: inset 0px 1px 1px #fff, 0 1px 0px 0px #000;
+    -moz-box-shadow: inset 0px 1px 1px #fff, 0 1px 0px 0px #000;
+    box-shadow: inset 0px 1px 1px #fff, 0 1px 0px 0px #000;
+  
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+
+}
+
+.animatedButtonText{
+	font-family: Oswald, Arial, sans-serif;
+	line-height: 38px !important;
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	white-space: nowrap;
+
+	color: #fff;
+	text-align:center;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+
+.animatedButton:hover{
+	background-color:#880408;
+	
+	-webkit-box-shadow: inset 0px 1px 1px #000, 0 1px 0px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 1px #000, 0 1px 0px 0px #fff;
+    box-shadow: inset 0px 1px 1px #000, 0 1px 0px 0px #fff;
+
+}
+
+.animatedButton:hover .animatedButtonText{
+
+	text-shadow:0px -1px 1px #000;
+    color:#c4282c;
+}
+
+
+/*** SECOND BUTTON ***/
+
+.animatedButton2{
+	font-family: Oswald, Arial, sans-serif;
+	text-decoration: none !important;
+	background-color:#a30e12;
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 38px;
+	line-height: 38px !important;
+	display: inline-block;
+	border: 1px solid #450003;
+	text-shadow:0px 1px 1px #000;
+	
+	-webkit-box-shadow: inset 0px 1px 1px #fff, 0 5px 0px 0px #450003;
+    -moz-box-shadow: inset 0px 1px 1px #fff, 0 5px 0px 0px #450003;
+    box-shadow: inset 0px 1px 1px #fff, 0 5px 0px 0px #450003;
+  
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+
+}
+
+.animatedButtonText2{
+	font-family: Oswald, Arial, sans-serif;
+	line-height: 38px !important;
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	white-space: nowrap;
+
+	color: #EAEAEA;
+	text-align:center;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+
+.animatedButton2:hover{
+	background-position:right;
+	background-color:#880408;
+	margin-top:5px;
+	-webkit-box-shadow: inset 0px 1px 1px #000, 0 0px 0px 0px #000;
+    -moz-box-shadow: inset 0px 1px 1px #000, 0 0px 0px 0px #000;
+    box-shadow: inset 0px 1px 1px #000, 0 0px 0px 0px #000;
+
+}
+
+.animatedButton2:hover .animatedButtonText2{
+
+	text-shadow:0px -1px 1px #000;
+    color:#b2161a;
+}
+
+/*** THIRD BUTTON ***/
+
+
+.animatedButton3{
+	font-family: Oswald, Arial, sans-serif;
+	text-decoration: none !important;
+	background-color:#a30e12;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 38px;
+	line-height: 38px !important;
+	display: inline-block;
+	border: 1px solid #450003;
+	text-shadow:0px 1px 1px #000;
+	overflow: hidden;
+	-webkit-box-shadow: inset 0px 1px 1px #fff;
+    -moz-box-shadow: inset 0px 1px 1px #fff;
+    box-shadow: inset 0px 1px 1px #fff;
+  
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.animatedButtonText3{
+	font-family: Oswald, Arial, sans-serif;
+	line-height: 38px !important;
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	white-space: nowrap;
+
+	color: #EAEAEA;
+	text-align:center;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+
+.animatedButton3:hover{
+	background-position:right;
+	background-color:#880408;
+	height:75px;
+	-webkit-box-shadow: inset 0px 1px 1px #000, 0 0px 0px 0px #000;
+    -moz-box-shadow: inset 0px 1px 1px #000, 0 0px 0px 0px #000;
+    box-shadow: inset 0px 1px 1px #000, 0 0px 0px 0px #000;
+
+}
+
+
+.animatedButtonExtraText3{
+	font-family: Arial, sans-serif;
+	font-size:12px;
+	color:#fff;
+	overflow: hidden;
+
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devicr-width,initial-scale=1">
+    <title>杜波简历</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<html>
+    <!--导航栏-->
+<div class="container">
+    <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="myimg">
+                    <img src="img/touxiang.jpg" class="img-circle navbar-left" alt="..." width="40" height="54">
+                </div>
+                <div class="person">
+                    <span class="p1">个人简历</span>
+                    <span class="p2">resume</span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul id="menu" class="nav navbar-nav navbar-right navul">
+
+                        <li data-menuanchor="page1" class="active"><a href="#page1">
+                            <marquee direction="right" behavior="alternate" scrollamount="1" width="50" onmouseover=this.stop() onmouseout=this.start()>
+                                首页
+                            </marquee>
+                        </a></li>
+                        <li data-menuanchor="page2"><a href="#page2">
+                            <marquee direction="right" behavior="alternate" scrollamount="1" width="50" onmouseover=this.stop() onmouseout=this.start()>
+                                技能
+                            </marquee>
+                        </a></li>
+                        <li data-menuanchor="page3"><a href="#page3">
+                            <marquee direction="right" behavior="alternate" scrollamount="1" width="50" onmouseover=this.stop() onmouseout=this.start()>
+                                项目
+                            </marquee>
+                        </a></li>
+                        <li data-menuanchor="page4"><a href="#page4">
+                            <marquee direction="right" behavior="alternate" scrollamount="1" width="50" onmouseover=this.stop() onmouseout=this.start()>
+                                联系
+                            </marquee>
+                        </a></li>
+                        <li data-menuanchor="page5"><a href="#page5">
+                            <marquee direction="right" behavior="alternate" scrollamount="1" width="50" onmouseover=this.stop() onmouseout=this.start()>
+                                致谢
+                            </marquee>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <!--全屏区-->
+<div id="dowebok"class="parsection" data-spy="scroll" data-target="#navbar-example" data-offset="0">
+
+    <!--首页   -->
+    <div id="home" class="section">
+        <div class="home">
+            <img class="img-circle" src="img/toux.jpg" alt="...">
+            <h3>前端虐我千百遍,我待前端如初恋。</h3>
+            <hr>
+            <marquee direction="up" width="200" height="200" scrollamount="2" onmouseover=this.stop() onmouseout=this.start()>
+                <p align="center">
+                <h4 class="myname" align="center">杜波</h4>
+                <h4 class="myage" align="center">24岁</h4>
+                <h4 class="myweb" align="center">web前端开发工程师</h4>
+                <h4 class="mytell" align="center">925614304qq@.com</h4>
+                <h4 class="mytell" align="center">成都高新区</h4>
+                </p>
+            </marquee>
+        </div>
+    </div>      <!--id="home"-->
+
+    <!--技能-->
+    <div id="skill" class="section">
+        <div class="skill">
+            <h3>技能<br>skill</h3>
+            <div class="myhtml myhtml1" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#HTML">
+                <div>
+                    <h3>HTML</h3>
+                </div>
+            </div>      <!--myhtml1-->
+            <!-- HTML模态框 -->
+            <div class="modal fade" id="HTML" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>1. 熟练HTML/XHTML标记语言</p>
+                            <p>2. 深刻理解web标准</p>
+                            <p>3. 熟练HTML熟悉盒模型和各类布局方式、 能够根据设计图实现页面布局和交互效果</p>
+                            <p>4. 对HTML5 移动web应用有一定的了解</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myhtml myhtml2" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#CSS">
+                <div>
+                    <h3>CSS</h3>
+                </div>
+            </div>      <!--myhtml2-->
+            <!-- CSS模态框 -->
+            <div class="modal fade" id="CSS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabe2">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>1.  熟练运用css及css新特性</p>
+                            <p>2.  熟悉css3标准，能够解决常见兼容性问题</p>
+                            <p>3.  掌握BootStrap框架，实践过响应式布局</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myhtml myhtml3" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#JS">
+                <div>
+                    <h3>Javascript</h3>
+                </div>
+            </div>      <!--myhtml3-->
+            <!-- JS模态框 -->
+            <div class="modal fade" id="JS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabe3">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>1. 原生js基础扎实，对js面向对象编程的思想有一定的了解</p>
+                            <p>2. 熟悉js、ajax能够编写js原生代码</p>
+                            <p>3. 熟练掌握jQuery</p>
+                            <p>4. 注重javascript的性能优化</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myhtml myhtml4" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Bootstrap">
+                <div>
+                    <h3>Bootstrap</h3>
+                </div>
+            </div>      <!--myhtml4-->
+            <!-- Bootstrap模态框 -->
+            <div class="modal fade" id="Bootstrap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabe4">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            1. 熟练HTML/XHTML标记语言<br>
+                            2. 深刻理解web标准<br>
+                            3. 熟练HTML熟悉盒模型和各类布局方式、 能够根据设计图实现页面布局和交互效果<br>
+                            4. 对HTML5 移动web应用有一定的了解
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!--进度条-->
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active prog95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <span>HTML熟练度：95%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active prog90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <span>CSS熟练度：90%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active prog80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <span>Javascript熟练度：80%</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active prog85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <span>Bootstrap熟练度：85%</span>
+                </div>
+            </div>
+        </div>      <!--skill-->
+    </div>      <!--id="skill"-->
+
+    <!--项目-->
+    <div id="production" class="section">
+
+        <h3>项目</h3>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <ul>
+                    <li class="proli">共享单车——一种对于出行超级方便快捷的代步手机app。
+                        <span>
+                            <a href="http://mobike.com/cn/" target="_blank">
+                                <img src="img/pro1.png" width="200" height="200">
+                            </a>
+                        </span>
+                    </li>
+                    <li class="proli">仿飞舟博客——微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的情况。 。
+                        <span><a href="faychou/index.html" target="_blank"><img src="img/fay.png" width="200" height="200"></a></span>
+                    </li>
+                    <li class="proli">仿博雅——中国的网络棋牌类游戏开发和运营商之一。
+                        <span><a href="boya/index.html" target="_blank"><img src="img/boya.png" width="200" height="200"></a></span>
+                    </li>
+                    <li class="proli">大数据登录界面——统计局大数据后台登录页面模板基于jquery-1.8.3.min.js制作，炫酷动画背景。<span>
+                        <a href="javaloge/index.html" target="_blank"><img src="img/pro3.png" width="200" height="200"></a></span>
+                    </li>
+                    <li class="proli">仿京东——中国最大的综合网络零售商，是中国电子商务领域最受消费者欢迎和最具有影响力的电子商务网站之一。<span>
+                        <a href="jingd/index.html" target="_blank"><img src="img/jd.png" width="200" height="200"></a></span>
+                    </li>
+                    <li class="proli">邦飞科技物联网页面——成都邦飞科技有限公司是一家专门从事软件开发IT培训的民营高科技公司。<span>
+                        <a href="bunfly-inter/index.html" target="_blank"><img src="img/in.png" width="200" height="200"></a></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>      <!--id="production"-->
+
+    <!--联系-->
+    <div id="contact" class="section">
+
+        <h3>联系</h3><br><br><br><br>
+        <div class="row">
+            <div class="container" style="width:70%">
+                <div class="col-xs-12 col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1" height="50">name</span>
+                        <input id="db" type="text" class="form-control" placeholder="name" onblur="Name()" aria-describedby="basic-addon1">
+
+                    </div><br>
+                    <span id="dbname"></span>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon2">email</span>
+                        <input id="qqcom" type="text" class="form-control" onblur="Email()" placeholder="email" aria-describedby="basic-addon1">
+                        <span id="qqcomemail"></span>
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">phone</span>
+                        <input id="call" type="text" class="form-control" onblur="Phone()" placeholder="phone" aria-describedby="basic-addon1">
+                        <span id="callphone"></span>
+                    </div><br>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <div>
+                         <textarea id="inputText" class="text" dir="ltr" tabindex="1" wrap="SOFT" name="i"
+                                          placeholder="  your message"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 col-md-offset-5">
+                    <input id="send" type="submit" value="  发送  ">
+                </div>
+            </div>
+        </div>     <!-- row-->
+
+        <div class="container saoma">
+                <span>联系我：</span><i class="fa fa-weixin"></i>
+                <div class="weixin">
+                    <img src="img/weixin.jpg" alt="..." width="200" height="200">
+                    <div class="sanjiao"></div>
+                </div>
+        </div>
+    </div>      <!--id="contact"-->
+
+    <!--致谢-->
+    <div id="record" class="section">
+        <br><br>
+        <h1 class="h3product">感谢观看</h1>
+        <h3><span>非常感谢您花时间阅读我的简历，期待有机会和您共事！</span></h3>
+
+    </div>      <!--id="record"-->
+
+</div>
+</body>
+</html>

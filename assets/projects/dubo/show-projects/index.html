@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/index.css"	>
+		<link rel="bookmark" href="img/star-empty.ico" type="image/x-icon">
+		<link rel="icon" href="img/star-empty.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="img/star-empty.ico" type="image/x-icon"/>
+	</head>
+	<body ng-app="myApp" ng-controller="MyCtrl">
+		<!-------------------------------导航=------------------------------>
+		<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+		  	<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    	<div class="navbar-header">
+		      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      		</button>
+		      		<div class="logo">
+		      			<img src="img/bunfly.png" alt="">
+		      		</div>
+		      		
+		    	</div>
+
+		    <!-- 导航内容 -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<h3 class="navbar-left">
+			      	<span class="glyphicon glyphicon-home"></span>
+			      	<a class="proj" href="#">项目</a>
+		      	</h3>
+		        <div class="form-group navbar-right">
+		          	<input type="text" class="form-control" ng-model="search" placeholder="Search">
+		        </div>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!----------------------------导航结束---------------------------->
+		<br><br><br><br>
+		<div class="a-href">
+			<a class="good" href="" ui-sref="sub1">优秀作品</a>
+			<a class="all" href="" ui-sref="sub2">全部作品</a>
+		</div>
+
+		<!--作品展示结束-->
+		  <div ui-view></div>
+		<br>
+	<!--脚部-->
+	<div class="footer"></div>
+
+	</body>
+	 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-route.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-animate.min.js"></script> 
+    <script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="js/index.js"></script>
+    <script>
+		var app = angular.module("myApp",["ui.router"]);
+			app.controller("MyCtrl",["$scope","$location","$http",function($scope,$location,$http) {
+						$http.get("data/article.json").success(function(sec){
+							$scope.articles=sec.articles;
+						});
+						$http.get("data/articles.json").success(function(res) {
+							$scope.articless=res.articless;
+						})
+			}]);
+
+			app.config(function($stateProvider,$urlRouterProvider) {
+				$urlRouterProvider.otherwise("/sub1");
+				$stateProvider
+				.state("mian",{
+					url:"/",
+					templateUrl:"tmp/allproject.html"
+
+				})
+				.state("sub1",{
+					url:"/sub1",
+					controller:"myctrl",
+					templateUrl:"tmp/allproject.html"
+				})
+				.state("sub2",{
+					url:"/sub2",
+					templateUrl:"tmp/bad.html"
+				})
+				.state("detail",{
+					url:"/detail",
+					template:"<div>detail</div>"
+				})
+				.state("order",{
+					url:"/order",
+					templateUrl:"pro/order/index.html"
+				})
+					.state("db",{
+						url:"/db",
+						template:`<iframe src ="project/dbresume/index.html" width="100%" height="800"></iframe>`
+					})
+
+			});
+		 app.controller("myctrl",["$scope","$http",function($scope,$http){
+			 $http.get('./data/articless.json').success(function(res){
+				 $scope.articless=res.articless;
+				 console.log(res);
+			 });
+		 }]);
+
+    </script>
+</html>

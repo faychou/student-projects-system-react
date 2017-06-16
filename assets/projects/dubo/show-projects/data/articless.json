@@ -1,0 +1,38 @@
+{
+  "articless": [{
+    "id": 1,
+    "title": "京东",
+    "href": "./project/dbresume/jingd/index.html",
+    "author": "杜波",
+    "resume": "./project/dbresume/index.html",
+    "exImg": "build/images/excellent/dubo/jd-l.jpg",
+    "img": "build/images/all/dubo/jd-s.jpg",
+    "content": "京东JD.COM-专业的综合网上购物商城，销售超数万品牌、4020万种商品，囊括家电、手机、电脑、母婴、服装等13大品类。秉承客户为先的理念，京东所售商品为正品行货、全国联保、机打发票。"
+  }, {
+    "id": 2,
+    "title": "飞舟博客",
+    "href": "./project/dbresume/faychou/index.html",
+    "author": "杜波",
+    "resume": "./project/dbresume/index.html",
+    "exImg": "build/images/excellent/dubo/faychou-l.jpg",
+    "img": "build/images/all/dubo/faychou-s.jpg",
+    "content": "微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的情况。 具体的症状应该是这样的： 在其它软件中（如记事本中）是可以打出中文字符的； 唯独PPT中只能输入英文，一旦切换到中文输入法时就无法打出中文； 可是却可以通过复制粘贴的方式将中文粘..."
+  }, {
+    "id": 3,
+    "title": "邦飞科技物联网页面",
+    "href": "./project/dbresume/bunfly-inter/index.html",
+    "author": "杜波 周家玉 唐建",
+    "resume": "./project/zjyresume/index.html",
+    "exImg": "build/images/excellent/dubo/in-l.jpg",
+    "img": "build/images/all/dubo/in-s.jpg",
+    "content": "成都邦飞科技有限公司是一家专门从事软件开发IT培训的民营高科技公司，业务涵盖互联网、军工电子、软件工程、大数据库、物联网等领域。公司位于成都市高新西区电子科技大学西区科技园内，下设有研发中心和高校实习实训基地。"  }, {
+    "id": 4,
+    "title": "我的个人简历",
+    "href": "./project/tjresume/index.html",
+    "author": "唐建",
+    "resume": "./project/tjresume/index.html",
+    "exImg": "build/images/excellent/tangjian/resume-l.jpg",
+    "img": "build/images/all/tangjian/resume-s.jpg",
+    "content": "熟练使用Sublime、Photoshop等软件，掌握网站效果图的制作、切片以及HTML页面代码优化等技术；熟练HTML5+CSS3、DIV+CSS等网站前端技术"
+  }]
+}

@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+/*登陆注册页面*/
+.app-login,
+.app-register {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: #eee;
+  text-align: center;
+}
+
+.app-register {
+  height: 460px;
+}
+
+.app-login h3,
+.app-register h3 {
+  margin-top: 30px;
+}
+
+.app-login input,
+.app-register input {
+  width:80%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.app-login input[type=submit],
+.app-register input[type=submit] {
+  box-sizing: content-box;
+}
+
+/*登陆注册失败的提示信息*/
+.app-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.error {
+  background: #e2d3d3;
+}
+
+/*项目管理页面*/
+.app-publish {
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.form-nav {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.form-link {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.form-link a:first-child {
+  float: left;
+}
+.form-link a:last-child {
+  float: right;
+}
+
+.form {
+  margin-top: 20px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-ctrl {
+  margin-top: 20px;
+}
+
+.form-ctrl input {
+  padding: 10px;
+  width: 60%;
+}
+
+.form-ctrl textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.form-ctrl input[type=submit] {
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  padding:0;
+  outline: none;
+  border: none;
+  background: lightseagreen;
+  color: #fff;
+}

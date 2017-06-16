@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" ng-repeat="x in articles |filter:search">
+			<div class="row">
+				<div class="col-md-4 md4">
+					<img class="img-responsive allimg" src="{{x.exImg}}" alt="">
+				</div>
+				<div class="col-md-7 col-md-offset-1 md7">
+					<h3 class="title"><a href="{{x.url}}">{{x.title}}</a></h3>
+					<h4><a href="{{x.author.resume}}">{{x.author.name}}</a></h4>
+					<span class="content text-left">{{x.content}}</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--全部作品页面-->

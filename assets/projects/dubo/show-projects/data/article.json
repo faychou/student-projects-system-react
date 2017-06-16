@@ -1,0 +1,105 @@
+{
+    "articles": [{
+        "title": "京东",
+        "author": {
+            "name": "杜波",
+            "resume": "./project/dbresume/index.html"
+        },
+        "url": "./project/dbresume/jingd/index.html",
+        "exImg": "build/images/excellent/dubo/jd-l.jpg",
+        "img": "build/images/all/dubo/jd-s.jpg",
+        "content": "京东JD.COM-专业的综合网上购物商城，销售超数万品牌、4020万种商品，囊括家电、手机、电脑、母婴、服装等13大品类。秉承客户为先的理念，京东所售商品为正品行货、全国联保、机打发票。"
+    }, {
+        "title": "飞舟博客",
+        "img": "img/fay.png",
+        "author": {
+            "name": "杜波",
+            "resume": "./project/dbresume/index.html"
+        },
+        "url": "./project/dbresume/faychou/index.html",
+        "exImg": "build/images/excellent/dubo/faychou-l.jpg",
+        "img": "build/images/all/dubo/faychou-s.jpg",
+        "content": "微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的情况。 具体的症状应该是这样的： 在其它软件中（如记事本中）是可以打出中文字符的； 唯独PPT中只能输入英文，一旦切换到中文输入法时就无法打出中文； 可是却可以通过复制粘贴的方式将中文粘..."
+    }, {
+         "title": "邦飞科技物联网页面",
+        "img": "img/in.png",
+        "author": {
+         "name": "杜波 周家玉 唐建"
+        },
+        "url": "./project/dbresume/bunfly-inter/index.html",
+        "exImg": "build/images/excellent/dubo/in-l.jpg",
+        "img": "build/images/all/dubo/in-s.jpg",
+        "content": "成都邦飞科技有限公司是一家专门从事软件开发IT培训的民营高科技公司，业务涵盖互联网、军工电子、软件工程、大数据库、物联网等领域。公司位于成都市高新西区电子科技大学西区科技园内，下设有研发中心和高校实习实训基地。"
+    }, {
+        "title": "我的个人简历",
+        "img": "img/my.png",
+        "author": {
+            "name": "杜波",
+            "resume": "./project/dbresume/index.html"
+        },
+        "url": "./project/dbresume/index.html",
+        "exImg": "build/images/excellent/dubo/resume-l.jpg",
+        "img": "build/images/all/dubo/resume-s.jpg",
+        "content": "熟练使用Sublime、Photoshop等软件，掌握网站效果图的制作、切片以及HTML页面代码优化等技术；熟练HTML5+CSS3、DIV+CSS等网站前端技术"
+    },{
+        "title": "京东",
+        "author": {
+            "name": "周家玉",
+            "resume": "./project/zjyresume/index.html"
+        },
+        "url": "./project/zjyresume/all/jd/index.html",
+        "exImg": "build/images/excellent/zhoujiayu/jd-l.jpg",
+        "img": "build/images/all/zhoujiayu/jd-s.jpg",
+        "content": "京东JD.COM-专业的综合网上购物商城，销售超数万品牌、4020万种商品，囊括家电、手机、电脑、母婴、服装等13大品类。秉承客户为先的理念，京东所售商品为正品行货、全国联保、机打发票。"
+    }, {
+        "title": "飞舟博客",
+        "author": {
+            "name": "周家玉",
+            "resume": "./project/zjyresume/index.html"
+        },
+        "url": "./project/zjyresume/all/faychou/index.html",
+        "exImg": "build/images/excellent/zhoujiayu/faychou-l.jpg",
+        "img": "build/images/all/zhoujiayu/faychou-s.jpg",
+        "content": "微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的情况。 具体的症状应该是这样的： 在其它软件中（如记事本中）是可以打出中文字符的； 唯独PPT中只能输入英文，一旦切换到中文输入法时就无法打出中文； 可是却可以通过复制粘贴的方式将中文粘..."
+    }, {
+        "title": "我的个人简历",
+        "author": {
+            "name": "周家玉",
+            "resume": "./project/zjyresume/index.html"
+        },
+        "url": "./project/zjyresume/index.html",
+        "exImg": "build/images/excellent/zhoujiayu/resume-l.jpg",
+        "img": "build/images/all/zhoujiayu/resume-s.jpg",
+        "content": "熟练使用Sublime、Photoshop等软件，掌握网站效果图的制作、切片以及HTML页面代码优化等技术；熟练HTML5+CSS3、DIV+CSS等网站前端技术"
+    },{
+        "title": "京东",
+        "author": {
+            "name": "唐建",
+            "resume": "./project/tjresume/index.html"
+        },
+        "url": "./project/tjresume/project/jd/index.html",
+        "exImg": "build/images/excellent/tangjian/jd-l.jpg",
+        "img": "build/images/all/tangjian/jd-s.jpg",
+        "content": "京东JD.COM-专业的综合网上购物商城，销售超数万品牌、4020万种商品，囊括家电、手机、电脑、母婴、服装等13大品类。秉承客户为先的理念，京东所售商品为正品行货、全国联保、机打发票。"
+    }, {
+        "title": "飞舟博客",
+        "author": {
+            "name": "唐建",
+            "resume": "./project/tjresume/index.html"
+        },
+        "url": "./project/tjresume/project/faychou/index.html",
+        "exImg": "build/images/excellent/tangjian/faychou-l.jpg",
+        "img": "build/images/all/tangjian/faychou-s.jpg",
+        "content": "微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的情况。 具体的症状应该是这样的： 在其它软件中（如记事本中）是可以打出中文字符的； 唯独PPT中只能输入英文，一旦切换到中文输入法时就无法打出中文； 可是却可以通过复制粘贴的方式将中文粘..."
+    },{
+        "title": "我的个人简历",
+        "author": {
+            "name": "唐建",
+            "resume": "./project/tjresume/index.html"
+        },
+        "url": "./project/tjresume/index.html",
+        "exImg": "build/images/excellent/tangjian/resume-l.jpg",
+        "img": "build/images/all/tangjian/resume-s.jpg",
+        "content": "熟练使用Sublime、Photoshop等软件，掌握网站效果图的制作、切片以及HTML页面代码优化等技术；熟练HTML5+CSS3、DIV+CSS等网站前端技术"
+    }]
+}

@@ -1,0 +1,901 @@
+html,span{
+	margin:0px;
+	padding:0px;
+	}
+body{
+	background-color: rgb(238,238,238);
+}
+.blog-title{width:auto;height:105px;background-color:rgb(26,188,156);}	/*页面顶部的样式*/
+
+/*当浏览器的宽度适配为pc页面时候的样式*/
+@media screen and (min-width:1101px ) {
+.title-content{
+	position: relative;
+	width:auto;
+	height: 105px;
+	background-color: rgb(26,188,156);
+	text-align: center;
+	vertical-align: middle;
+	margin:auto;
+	
+	}
+.title-one{
+	display: inline-block;
+	font-size: 54px;
+	color: white;
+	position:relative;	
+	text-shadow: 0px 0px 1px rgba(94,255,216,0.8);
+	letter-spacing: 2px;
+	transition: all 1s ease-out;
+	-moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+}
+.title-info{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: normal;
+	color: white;
+	text-shadow: 0px 0px 1px rgba(94,255,216,0.8);
+	position: relative;
+	margin-left: -4px;
+	transition: all 1s ease-out;
+}
+.title-content:hover .title-one{
+	letter-spacing: 6px;
+	width:250px;
+	
+}
+.title-content:hover .title-info{
+	opacity:0.2;
+}
+
+.nav-style{display:none;}
+.nav-line{display:none;}
+
+.four-img{
+	position:absolute;
+	float:left;
+	right:340px;
+	width:71%;
+}
+.turn-img{
+	position:absolute;
+	height:290px;
+	width:78px;/*100px*/;
+	margin-right:0px;
+	right:91%;
+}
+
+.img-turn{
+	position:relative;
+	float:right;
+	right:10px;
+	margin-right:0px;
+	width:89%;/*719px*/
+	height:300px;/*330px*/
+	background-size: cover;
+	transition:all 1s;
+}
+
+.content-right{
+	position:absolute;	
+	right:0px;
+	margin-right:0px;
+	height:1900px;
+	background-color: rgb(238,238,238);
+	z-index:10;	
+}
+
+.content-article{
+	width:71%;
+	height:90%;
+	float:right;
+	position:absolute;
+	right:340px;
+	margin-right:10px;
+	margin-top:10px;
+}
+
+.meta-talk{
+	position:absolute;
+	right:0px;
+	bottom: 10px;
+	width:75%;
+}
+
+.meta-talk div{
+	position:relative;
+	font-size:12px;
+	margin-left:20px;
+	display: inline-block;
+	width:1%;
+}
+
+.blog-title{width:auto; height:105px; background-color:rgb(26,188,156);}
+}
+
+/*当页面缩小到701到1100像素的时候，页面所展现的样式*/
+@media screen and (max-width:1100px) and (min-width:868px){
+.title-info{display:none}
+.title-info:hover{display:none}
+.nav{display:none}
+.nav-style{
+		display:inline-block;
+		position:absolute;
+		top:10px;
+		left:10px;
+	}
+.nav-line{display:none;}
+.notice{display:none;}
+.title-content{width:auto}
+.title-one{
+	display: inline-block;
+	font-size: 54px;
+	margin-left:5%;
+	color: white;
+	position:relative;	
+	text-shadow: 0px 0px 1px rgba(94,255,216,0.8);
+	letter-spacing: 2px;
+	transition: all 1s ease-out;
+	-moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+}
+.title-info{display:none;}
+.content-right{display:none;}
+.meta-talk{display:none;}
+
+.img-turn{
+	margin-left:80px;
+	width:91%;
+	 height:12%;
+	 position:absolute;
+	 top:0px;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 }
+	 
+.turn-img{
+	float:left;
+	margin-right:5px;
+	height:290px;
+	width:78px;/*100px*/;
+}
+
+.content-article{
+	width:101%;
+	height:90%;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+}	 
+	 
+.blog-title{
+	text-align:center;
+	background-color:rgb(26,188,156);
+	width:auto;
+	}	
+	}
+
+/*当页面缩小到768以下的时候，首页所展现的样式*/
+@media only screen and (min-width:0px) and (max-width: 868px) {
+.title-one{
+	font-size: 54px;
+	margin-left:32%;
+	color: white;
+	position:relative;	
+	text-shadow: 0px 0px 1px rgba(94,255,216,0.8);
+	letter-spacing: 2px;
+	transition: all 1s ease-out;
+	-moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+}
+
+.title-info{display:none;}
+
+.nav{display:none}
+
+.notice{display:none;}
+
+.nav-style{
+		display:inline-block;
+		position:absolute;
+		top:10px;
+		left:10px;
+	}
+
+.nav-line{
+		display:none;
+		background-color:rgb(217,233,230);
+		padding-left:40px;
+		height:auto;
+	}
+	
+.nav-line li{
+		font-size:18px;
+		font-weight:700;
+		margin-top:10px;
+		opacity:0.7;
+		list-style:none;
+	}
+
+.nav-line li:hover{
+		background-color:rgb(217,233,230);
+	}
+
+.first-nav-style li{
+		display: none;
+		font-weight:400;
+		opacity:0.6;
+		margin-left:30px;
+		transition: all 2s;
+		}
+
+.first-nav-style:hover li{
+		display:block;	
+	}
+
+.second-nav-style li{
+		display:none;
+		font-weight:400;
+		opacity:0.6;
+		margin-left:30px;
+		transition: all 2s;
+		position:relative;
+			}
+
+.second-nav-style:hover li{
+		display:block;
+	}
+
+.img-turn{
+		display:block;
+		height:200px;
+		margin-left:0px;
+		background-size:cover;
+	}
+
+.turn-img div{
+		display:none;
+	}
+
+.meta-talk{display:none;}
+
+.content-right{
+		display:none;
+		position:absolute;
+		z-index:-10;
+	}
+
+/*首页文章主体部分*/
+.content-article{
+		width:100%;
+		margin-top:-100px;
+	}
+	
+}
+
+/*以上内容都是响应式布局的样式*/
+
+.nav{
+	height:52px;
+	background-color:rgb(68,85,82);
+
+}
+
+.nav-li{
+	list-style: none;
+	display:inline-block;
+	color: white;
+	font-size: 16px;
+	line-height: 52px;
+	margin-right: 10px;
+	font-weight: 900;
+	width:72px;
+	position:relative;
+	text-align: center;
+	}
+
+.nav-ul{margin-left:12.7%;}
+
+.nav-others ul,.nav-source ul{
+	visibility: hidden;
+	transition: transform 5s 2s;
+	}
+	
+li li{list-style:none;}
+
+li ul li:hover{
+	background-color:rgb(68,85,82);
+}
+
+.nav-source ul{
+	position:absolute;
+	top:100%;
+	left:-40px;
+	opacity: 0.7;
+	z-index: 2;
+	width:130px;
+	}
+
+.nav-source li{
+	transform: rotateY(180deg);
+	transition: all 2s;
+}
+
+.nav-others ul{
+	position:absolute;
+	top:100%;
+	left:-40px; 
+	opacity: 0.7;
+	z-index: 2;
+	width:130px;
+	}
+
+.nav-others li{text-align:center;}
+
+.nav-source:hover ul{
+	visibility:visible;
+	}
+
+.nav-others:hover ul{
+	visibility: visible;
+	z-index: 2;
+	text-align: left;
+	}
+
+.nav-source:hover li{
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	background-color:rgb(21,162,135);
+	}
+
+.nav-source li:nth-child(1){
+	transition:all 1s 0.5s;
+	}
+
+.nav-source li:nth-child(2){
+	transition:all 1s 0.6s;
+	}
+
+.nav-source li:nth-child(3){
+	transition:all 1s 1.2s;
+	}
+
+.nav-source li:nth-child(4){
+	transition:all 1s 1.8s;
+	}
+
+.nav-source li:nth-child(5){
+	transition:all 1s 2.4s;
+	}
+
+li:hover{
+	background-color: rgb(26,188,156);
+	}	
+
+.nav-others li{
+	-webkit-transform: rotateY(180deg);
+	 transform: rotateY(180deg);
+	-webkit-transition:all 5s 0.5s;
+	transition:all 5s 0.5s;	
+	background-color:rgb(21,162,135);
+	}
+
+.nav-others:hover li{
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	}
+
+.nav-others li:nth-child(1){
+	transition:all 1s 0.5s;
+	}
+
+.nav-others li:nth-child(2){
+	transition:all 1s 1s;
+	}
+
+.nav-others li:nth-child(3){
+	transition:all 1s 1.5s;
+	}
+
+.nav-others li:nth-child(4){
+	transition:all 1s 2s;
+	}
+
+.nav-others li:nth-child(5){
+	transition:all 1s 2.5s;
+	}
+	
+/*此处为放大镜部分的样式（搜索）*/		
+.glass{
+	float:right;
+	margin-right:12.7%;
+	height:52px;
+}
+
+.notice{
+	width:75%;
+	height:40px;
+	position: relative;
+	margin:auto;
+	background-color: rgb(251,251,251);
+}
+
+.fa-volume-up{
+	line-height: 40px;
+	color:rgb(168,213,160);
+}
+
+.notice-text{
+	text-align:left;
+	line-height: 40px;
+	font-size:14px;
+	color:rgb(102,102,155);
+}
+
+.notice-logo{
+	float:right;
+	margin-right:10px;
+	line-height:40px;
+	font-size:14px;
+	color:rgb(102,102,155);
+}
+
+.fa-user{
+	color:rgb(176,176,176);
+	float:right;
+	margin-top:14px;
+	margin-right:8px;
+	}
+	
+.content-search{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:330px;
+	height:40px;
+	background-color:white;
+	z-index: -1;
+}
+
+.small-search{
+	margin-top:12px;
+	opacity:0.5;
+	margin-left:10px;
+}
+
+.search{
+	margin-left:5px;
+	width:250px;
+	height:40px;
+	position:absolute;
+	top:-10px;
+	outline: none;
+	border:0px;
+}
+
+/*此处为四个小图标*/
+.turn-img div{
+	width:100%;
+	height:24%;
+}
+
+.M-1{
+	background-image: url(../img/M-1.png);
+	background-size:cover;
+	}
+	
+.M-2{
+	background-image: url(../img/M-2.png);
+	background-size:cover;
+		margin-top:8px;
+	}
+
+.M-3{
+	background-image: url(../img/M-3.png);
+	background-size:cover;
+		margin-top:8px;
+	}
+
+.M-4{
+	background-image: url(../img/M-4.png);
+	background-size:cover;
+	margin-top:7px;
+	}
+
+/*这里是右上角的六个小图标*/
+.info-1{
+	background-color:rgb(255,255,255);
+	height:65px;
+	width:330px;
+	
+}
+
+.info-1 span{
+	position:relative;
+	display:inline-block;
+	width:40px;
+	height:40px;
+	margin:15px 2px;
+	font-size:28px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.info-1 span:nth-child(1){
+	background-color: rgb(247,133,133);
+	color:white;
+	border-radius: 10%;
+	margin-left:20px;
+}
+
+.info-1 span:nth-child(2){
+	background-color: rgb(39,204,192);
+	color:white;
+	border-radius: 10%;
+}
+
+.info-1 span:nth-child(3){
+	background-color: rgb(247,133,133);
+	color:white;
+	border-radius: 10%;
+}
+
+.info-1 span:nth-child(4){
+		background-color: rgb(236,163,172);
+		color:white;
+	border-radius: 10%;
+}
+
+.info-1 span:nth-child(5){
+		background-color: rgb(231,76,60);
+		color:white;
+	border-radius: 10%;
+}
+
+.info-1 span:nth-child(6){
+	background-color: rgb(255,124,73);
+	color:white;
+	border-radius: 10%;
+}
+
+.info-1 span:hover{
+	background-color:rgb(120,180,171);
+}
+
+.info-1 div{
+	position:absolute;
+	display: none;
+	background-color:rgb(61,158,136);
+	font-size: 10px;
+	width:66px;
+	height: 30px;
+	border-radius: 20%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.info-1 span:hover div{
+	display: block;
+	top:-35px;
+	left:-15px;
+}
+
+.info-1 span:hover .weixin{
+	display: block;
+	top:40px;
+	left:-85px;
+	width:200px;
+	height: 330px;
+}
+
+.weixin span{
+	display: inline-block;
+	width:180px;
+	font-size:6px;
+}
+
+/*邮箱订阅部分*/
+
+.email-order{
+	color:rgb(26,188,156);
+	margin-top:10px;
+	background-color: white;
+	height:140px;
+	width:330px;
+}
+
+.email-order-span{
+	font-size:18px;
+	margin-left:20px;
+	margin-top:10px;
+	display: inline-block;
+}
+
+hr{
+	border:none;
+	border-bottom: 2px solid rgb(26,188,156);
+	margin:10px 0px;
+}
+
+.email-info{
+	font-size:12px;
+	color:black;
+	opacity: 0.8;
+	margin-left:20px;
+	margin-top:10px;
+}
+
+/*此处为读者输入的邮箱框的样式*/
+input{
+	margin-top:10px;
+}
+
+.email-form{
+	width:310px;
+	height:40px;
+	background-color:rgb(247,247,247);
+	margin-left:20px;
+	margin-top:10px;
+}
+
+.email-input{
+	margin-top:-10px;
+	background-color:rgb(247,247,247);
+	outline: none;
+	border:0px;
+	height:20px;
+	width:225px;
+}
+
+.email-button{
+	width:70px;
+	height:40px;
+	background-color:rgb(26,188,156);
+	border:0px;
+	margin-top:0px;
+	margin-right:10px;
+	color:white;
+}
+
+.directory{
+	height:140px;
+	width:330px;
+	background-color: white;
+	margin-top:10px;
+}
+
+.directory span{
+	display: inline-block;
+	margin-top:10px;
+	margin-left:20px;
+	font-size:18px;
+	color:rgb(26,188,156);
+}
+
+table{
+	margin-top:10px;
+	margin-left:20px;
+	margin-bottom: 10px;
+	color:rgb(26,188,156);
+	width:250px;
+	font-size:16px;
+}
+
+.lable-cloud{
+	width:330px;
+	height:260px;
+	margin-top:10px;
+	background-color: white;
+}
+
+.lable-cloud span{
+	display: inline-block;
+	margin-top:10px;
+	margin-left:20px;
+	font-size:18px;
+	color:rgb(26,188,156);
+	
+}
+
+.lable-cloud table{
+	color:white;
+	margin-left:5px;
+	width:300px;
+	margin-left:20px;
+	height:200px;
+}
+
+.lable-cloud tr{
+	height:30px;
+	} 
+
+/*标签云的颜色样式*/
+.lable-cloud tr:nth-child(1) td:nth-child(1){background-color: rgb(91,190,171);}
+.lable-cloud tr:nth-child(1) td:nth-child(2){background-color: rgb(141,205,141);}
+.lable-cloud tr:nth-child(2) td:nth-child(1){background-color: rgb(228,135,132);}
+.lable-cloud tr:nth-child(2) td:nth-child(2){background-color: rgb(137,165,181);}
+.lable-cloud tr:nth-child(3) td:nth-child(1){background-color: rgb(202,112,255);}
+.lable-cloud tr:nth-child(3) td:nth-child(2){background-color: rgb(77,193,163);}
+.lable-cloud tr:nth-child(4) td:nth-child(1){background-color: rgb(202,157,112);}
+.lable-cloud tr:nth-child(4) td:nth-child(2){background-color: rgb(255,148,77);}
+.lable-cloud tr:nth-child(5) td:nth-child(1){background-color: rgb(128,128,128);}
+.lable-cloud tr:nth-child(5) td:nth-child(2){background-color: rgb(91,190,171);}
+/*标签云鼠标移动的样式*/
+.lable-cloud tr:nth-child(1) td:nth-child(1):hover{background-color: rgb(21,162,135);}
+.lable-cloud tr:nth-child(1) td:nth-child(2):hover{background-color: rgb(92,184,92);}
+.lable-cloud tr:nth-child(2) td:nth-child(1):hover{background-color: rgb(217,83,79);}
+.lable-cloud tr:nth-child(2) td:nth-child(2):hover{background-color: rgb(86,126,149);}
+.lable-cloud tr:nth-child(3) td:nth-child(1):hover{background-color: rgb(180,51,255);}
+.lable-cloud tr:nth-child(3) td:nth-child(2):hover{background-color: rgb(0,166,124);}
+.lable-cloud tr:nth-child(4) td:nth-child(1):hover{background-color: rgb(179,115,51);}
+.lable-cloud tr:nth-child(4) td:nth-child(2):hover{background-color: rgb(255,102,0);}
+.lable-cloud tr:nth-child(5) td:nth-child(1):hover{background-color: rgb(74,74,74);}
+.lable-cloud tr:nth-child(5) td:nth-child(2):hover{background-color: rgb(21,162,135);}
+
+
+.lable-cloud td{ position:relative;}
+
+.lable-cloud td div{display:none;height:30px;} 
+
+.lable-cloud td:hover div{
+	display:block;
+	position:absolute;
+	top:-35px;
+	left:40px;
+	background-color:rgb(26,188,156);
+	border-radius: 20%;
+}
+
+/*recentl-article:这是近期文章部分样式*/
+
+.recently-article{                   
+	height:290px;             
+	width:330px;              
+	background-color: white;  
+	margin-top:10px;           }                             
+
+.recently-article span{   	display: inline-block;     	margin-top:10px;           margin-left:20px; 
+    font-size:18px;       color:rgb(26,188,156);
+    }
+
+.recently-article-span span{
+	font-size:12px;
+}
+
+.recently-article hr{
+	size:2px;
+	border:0px solid black;
+	border-top:1px solid black;
+	opacity:0.4;
+	color:black;
+} 
+
+/*这里是时事热门新闻部分*/
+.new-hot{
+	margin-top:10px;
+	background-color:white;
+	width:330px;
+	height:445px;
+}                   
+
+.new-hot span{
+	display:inline-block;
+	font-size:18px;
+	color:rgb(26,188,156);
+	margin-left:20px;
+	margin-top:10px;
+}
+
+.new-hot .create-content{
+	font-size:12px;
+}
+
+.new-hot .create-time{
+	color:black;
+	opacity:0.4;
+	font-size:10px;
+}
+
+.new-hot hr{
+	size:2px;
+	border:0px solid black;
+	border-top:1px solid black;
+	opacity:0.4;
+	color:black;
+}
+
+.active-reader{
+	margin-top:10px;
+	background-color:white;
+	width:330px;
+	height:75px;
+}
+
+.active-reader span{
+	display:inline-block;
+	font-size:18px;
+	color:rgb(26,188,156);
+	margin-left:20px;
+	margin-top:10px;
+}
+
+.active-reader hr{
+	size:2px;
+	border:0px solid black;
+	border-top:1px solid black;
+	opacity:0.4;
+	color:black;
+}
+
+/*作者吐槽部分*/
+.teasing{
+	margin-top:10px;
+	background-color:white;
+	width: 330px;
+	height:120px;
+}
+
+.teasing span{
+	display:inline-block;
+	font-size:18px;
+	color:rgb(26,188,156);
+	margin-left:20px;
+	margin-top:10px;
+}
+
+.photo{
+	display:inline-block;
+	width:55px;
+	height:55px;	
+	float:left;
+}
+
+.teasing-content{
+	display:inline-block;
+	width:160px;
+	height:55px;
+	border-radius: 10%;
+	background-color:yellow;
+	background-color:rgb(251,253,251);
+}
+
+.fa-user-o{
+	font-size:18px;
+	background-color:darkgoldenrod;	
+}
+
+/*日历部分样式*/
+.data{
+	margin-top:10px;
+	width:330px;
+	background-color:white;
+}
+
+.data .data-title{
+	display:inline-block;
+	font-size:18px;
+	color:rgb(26,188,156);
+	margin-left:20px;
+	margin-top:10px;
+} 
+
+.data-header{
+	display: inline-block;
+	text-align:center;
+	width:330px;
+	opacity:0.7;
+}
+
+.data-table{
+	width:92%;
+	height:200px;
+	text-align: center;
+}
+
+.data-table td{
+	background-color:rgb(251,251,251);
+}      
